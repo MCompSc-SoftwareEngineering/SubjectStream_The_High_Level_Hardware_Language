@@ -1,4 +1,4 @@
-package Lesson_7__Java__OpenEpiCentre__TestBenching_And_Implementation;
+package Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre;
 import io.IO;
 import engine.Framework;
 public class Main {
