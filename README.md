@@ -2,7 +2,7 @@
 
 ## [SUBJECT Alpha: C++, Java - Introduction To High Level Hardware Language.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems)
 
-[LESSON 0: Theory of Deductive Reasoning, Architechure of Silicaon and Coarbon Thinking.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_0__Theory_of_Deductive_Reasoning_Architechure_of_Silicon_and_Carbon_Thinking)
+[LESSON 0: Theory of Deductive Reasoning, Architechure of Silicon and Carbon Thinking.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_0__Theory_of_Deductive_Reasoning_Architechure_of_Silicon_and_Carbon_Thinking)
 
 [LESSON 1: C++ - Introduction to the Dynamic Link Library (DLL). ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library)
 
