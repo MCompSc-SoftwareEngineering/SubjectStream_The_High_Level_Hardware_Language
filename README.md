@@ -11,7 +11,7 @@
 ### LESSON 5: Java - A Simple Game (Pong),
 
 ## SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.
-### LESSON 5: CLIB Server-Side - Launch Que For Threads At Ends.
-### LESSON 6: CLIB Server-Side - OpenEpiCentre.
-### LESSON 7: Java  - Simulation and Test-Benching - OpenEpiCentre.
+### LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.
+### LESSON 7: CLIB Server-Side - OpenEpiCentre.
+### LESSON 8: Java  - Simulation and Test-Benching - OpenEpiCentre.
 
