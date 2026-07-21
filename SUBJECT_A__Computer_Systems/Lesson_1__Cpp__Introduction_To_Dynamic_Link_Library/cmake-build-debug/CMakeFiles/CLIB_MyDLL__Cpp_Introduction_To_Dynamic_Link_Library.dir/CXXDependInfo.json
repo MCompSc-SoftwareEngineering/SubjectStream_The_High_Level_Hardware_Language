@@ -1,0 +1,62 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/cmake-build-debug",
+	"dir-cur-src" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library",
+	"dir-top-bld" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/cmake-build-debug",
+	"dir-top-src" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/cmake-build-debug/CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir",
+	"sources" : 
+	{
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyDLL.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/CLIB_MyDLL.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__App.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__App.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Data.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Data.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Framework.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Framework.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Global.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Global.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Input.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Input.cpp"
+		},
+		"CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Output.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Output.cpp"
+		}
+	}
+}

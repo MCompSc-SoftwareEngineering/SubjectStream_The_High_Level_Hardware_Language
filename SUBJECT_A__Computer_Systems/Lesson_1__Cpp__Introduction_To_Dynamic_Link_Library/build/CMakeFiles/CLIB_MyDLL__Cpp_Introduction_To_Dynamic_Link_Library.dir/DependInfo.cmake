@@ -1,0 +1,30 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/CLIB_MyDLL.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyDLL.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyDLL.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__App.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__App.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__App.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Data.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Data.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Data.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Framework.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Framework.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Framework.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Global.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Global.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Global.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Input.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Input.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Input.cpp.o.d"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/Introduction_To_Dynamic_Link_Library__Output.cpp" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Output.cpp.o" "gcc" "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Output.cpp.o.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

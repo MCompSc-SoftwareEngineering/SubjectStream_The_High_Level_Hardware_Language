@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyDLL.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyDLL.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Algorithms.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__App.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__App.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Data.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Data.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Framework.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Framework.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Global.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Global.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Input.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Input.cpp.o.d"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Output.cpp.o"
+  "CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/Introduction_To_Dynamic_Link_Library__Output.cpp.o.d"
+  "libCLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.a"
+  "libCLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
