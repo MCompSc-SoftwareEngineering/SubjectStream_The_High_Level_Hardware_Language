@@ -1,4 +1,4 @@
-# Theory_Of_Interfacing_Deductive_Reasoning
+# Theory of Deductive Reasoning, Architechure of Silicaon and Coarbon Thinking.
 
 ## History:
 The Pharaoh of The West Andes had implemented markets and commodity. When population grew, and new markets sprang, commodity was loaned out by the royal bank to establish such. Upon recollection of the funds the collectors were found dead and empty handed, the establishment of the new market claim they paid the collector. Hence the Prince of the Pharaoh device a process to interface the many collectors. This is commonly know as interfacing logical abduction.
