@@ -5,6 +5,7 @@
   </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
   </component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
@@ -16,7 +17,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="950f5a76-606e-4234-8155-7e9ebdb63d43" name="Changes" comment="DEVELOPMENT_2026_07_21_1429, &lt;COMPILE&lt;SUCCESS&gt;.&#10;&#10;initial commit.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/SIMULATION/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/SIMULATION/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/engine/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/engine/Execute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/engine/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/engine/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/io/MyDLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/io/OpenEpiCentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/libs/JavaLIB_OpenEpiCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/libs/JavaLIB_OpenEpiCentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/threads/IO_ListenRespond.java" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/threads/IO_ListenRespond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/SIMULATION/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/SIMULATION/Simulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/engine/Execute.class" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/engine/Execute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/engine/Global.class" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/engine/Global.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/io/MyDLL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/libs/JavaLIB_OpenEpiCentre.class" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/libs/JavaLIB_OpenEpiCentre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/threads/IO_ListenRespond.class" beforeDir="false" afterPath="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/target/classes/threads/IO_ListenRespond.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +81,7 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/brenton-james/MCompSc_SoftwareEngineering",
+    "last_opened_file_path": "/home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_7__CLIB_ServerSide__OpenEpiCentre",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",

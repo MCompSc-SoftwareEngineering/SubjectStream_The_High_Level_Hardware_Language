@@ -69,7 +69,12 @@ public class Global
     }
     public static boolean stat_CONVERT_LsbByteArray_To_LsbBoolean(byte[] bytesBool)
     {
-        return (bytesBool[0] != 0);
+        boolean temp;
+        temp = false;
+        if(bytesBool[0] != 0) {
+            temp = true;
+        }
+        return temp;
     }
     public static double stat_CONVERT_LsbByteArray_To_LsbDouble(byte[] byteArray)
     {
