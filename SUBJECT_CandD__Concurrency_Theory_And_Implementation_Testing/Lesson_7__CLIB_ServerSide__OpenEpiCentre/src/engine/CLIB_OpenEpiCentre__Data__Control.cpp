@@ -32,22 +32,22 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_pop_From_Stack_Of_Input(CLIB_OpenEpiCentre__Framework* obj, uint8_t concurrentThreadID)
     {
-        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentThreadID, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(0));
-        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentThreadID, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(1));
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentThreadID, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_InputPraise(0));
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentThreadID, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_InputPraise(1));
         obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise()->erase(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise()->begin()+1);
-        if (sizeof(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise()) < 2) {
+        if (sizeof(*obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise()) < 2) {
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(false);
         }
         else {
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(true);
         }
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_pop_From_Stack_Of_Output(CLIB_OpenEpiCentre__Framework* obj, uint8_t concurrentThreadID)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_pop_From_Stack_Of_Output(CLIB_OpenEpiCentre__Framework* obj)
     {
-        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Output_ReferenceForThread(concurrentThreadID, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_OutputPraise(0));
-        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Output_ReferenceForThread(concurrentThreadID, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_OutputPraise(1));
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(obj, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_OutputPraise(0));
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(obj, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_OutputPraise(1));
         obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise()->erase(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise()->begin()+1);;
-        if (sizeof(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise()) < 2) {
+        if (sizeof(*obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise()) < 2) {
             stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(false);
         }
         else {
@@ -56,37 +56,25 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_push_To_STACK_Of_Input(CLIB_OpenEpiCentre__Framework* obj)
     {
-        std::vector<CLIB_OpenEpiCentre_STRUCT__Input*>* ptr_InputStack = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise();
-        CLIB_OpenEpiCentre_STRUCT__Input* ptr_Buffer_Praise = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
-        ptr_InputStack->push_back(ptr_InputStack->at(0));
-        ptr_InputStack->at(ptr_InputStack->size()) = ptr_Buffer_Praise;
-        if (sizeof(ptr_InputStack) < 2)
-        {
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise()->push_back(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_InputPraise(0));
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise()->push_back(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_READ(obj));
+        if (sizeof(size(*obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise())) < 2) {
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(false);
         }
-        else
-        {
+        else {
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(true);
         }
-        delete ptr_InputStack;
-        delete ptr_Buffer_Praise;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_push_To_STACK_Of_Output(CLIB_OpenEpiCentre__Framework* obj, uint8_t concurrentThreadID)
     {
-        std::vector<CLIB_OpenEpiCentre_STRUCT__Output*>* ptr_outputStack = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise();
-        CLIB_OpenEpiCentre_STRUCT__Output* ptr_referenceForCore = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrentThreadID);
-        ptr_outputStack->push_back(ptr_outputStack->at(0));
-        ptr_outputStack->at(ptr_outputStack->size()) = ptr_referenceForCore;
-        if (sizeof(ptr_outputStack) < 2)
-        {
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise()->push_back(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_OutputPraise(0));
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise()->push_back(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrentThreadID));
+        if (sizeof(size(*obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise())) < 2) {
             stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(false);
         }
-        else
-        {
+        else {
             stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(true);
         }
-        delete ptr_outputStack;
-        delete ptr_referenceForCore;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
     {

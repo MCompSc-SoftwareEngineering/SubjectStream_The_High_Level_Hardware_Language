@@ -14,8 +14,8 @@ extern "C"
 			static unsigned char* CLIBConcurrentServerIO__app_FUNCT_get_flag_isPGM_INSTANTIATED();
 			static void CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(unsigned char* bytes);
 			static void CLIBConcurrentServerIO__app_FUNCT_terminate_Program();
-			static CLIB_OpenEpiCentre_STRUCT__Output CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
-			static void CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input(CLIB_OpenEpiCentre_STRUCT__Input sampleIn);
+			static void CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
+			static void CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input();
 			static void* CLIBConcurrentServerIO__dyn_PGM_get_program_WriteEnableStack_ServerInputReceive();
 			static void* CLIBConcurrentServerIO__dyn_PGM_get_program_WriteEnableStack_ServerOutputSend();
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
