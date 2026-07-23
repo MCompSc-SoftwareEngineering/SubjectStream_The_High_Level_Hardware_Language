@@ -1,7 +1,6 @@
-# SubjectStream_The_High_Level_Hardware_Language.
-## RESOURCE.
-SUBJECT_A__Computer_Systems.
-Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library.
+# RESOURCE - SubjectStream_The_High_Level_Hardware_Language.
+### SUBJECT_A__Computer_Systems.
+#### Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library.
 
 ---
 ## Using.
