@@ -1,4 +1,6 @@
-# Java: TestBench and Implementation.
+# RESOURCE - Java: TestBench and Implementation.
+### SUBJECT_A__Computer_Systems.
+#### Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration.
 
 
 ---
