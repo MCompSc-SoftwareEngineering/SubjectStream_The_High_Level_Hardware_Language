@@ -1,6 +1,6 @@
 #ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__ALGORITHMS_H
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__ALGORITHMS_H
-#include "../engine/CLIB_OpenEpiCentre__Framework.h"
+#include "CLIB_OpenEpiCentre__Framework.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Concurrent.h"
 #include <cstdint>
 #include <list>

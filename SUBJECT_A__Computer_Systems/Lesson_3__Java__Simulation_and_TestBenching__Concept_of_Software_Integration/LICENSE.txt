@@ -1,7 +1,8 @@
 MIT License
 
 Copyright (c) 2026 SUBJECT Computer Systems - Lesson 3: Java Testbencing and
-Implementation. King Brenton James Maddocks BEng(CompSys).
+Implementation. SWINBURNE University of Technology - Peter O'Donoghue and King
+Brenton James Maddocks Crown of Queensland BEng(CompSys).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,7 +1,6 @@
 #ifndef CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
 #define CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
-#include "structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
-#include "structs/CLIB_OpenEpiCentre_STRUCT__Output.h"
+#include "../include/engine/CLIB_OpenEpiCentre__Framework.h"
 extern "C"
 {
 	namespace CLIBOpenEpiCentre

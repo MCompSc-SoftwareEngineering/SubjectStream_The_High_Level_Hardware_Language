@@ -1,8 +1,6 @@
 #ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__DATA__CONTROL_H
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__DATA__CONTROL_H
 #include "../engine/CLIB_OpenEpiCentre__Framework.h"
-#include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
-#include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Output.h"
 #include <cstdint>
 namespace CLIBOpenEpiCentre
 {

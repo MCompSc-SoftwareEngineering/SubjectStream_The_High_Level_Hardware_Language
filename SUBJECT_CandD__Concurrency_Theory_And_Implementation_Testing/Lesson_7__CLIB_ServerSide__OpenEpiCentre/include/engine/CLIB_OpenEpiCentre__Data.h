@@ -2,10 +2,10 @@
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__DATA_H
 #include "CLIB_OpenEpiCentre__Data__Control.h"
 #include "CLIB_OpenEpiCentre__Framework.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT__User_Input.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT__User_Output.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Output.h"
+#include "../structs/CLIB_OpenEpiCentre_STRUCT__User_Input.h"
+#include "../structs/CLIB_OpenEpiCentre_STRUCT__User_Output.h"
 #include <array>
 #include <cstdint>
 #include <vector>

@@ -1,52 +1,101 @@
-# Java: TestBench and Implementation.
+# Lesson_3__Java__TestBenching_And_Implementation.
 
+---
+## Branches.
+ - main.
 
 ---
 ## Using.
-### LINUX Ubuntu.
-**version:** Ubuntu 24.04.4 LTS.
+### Ubuntu LINUX.
+version: Ubuntu 24.04.4 LTS
 
-### CLion. 
-**Version:** 2026.1.2.
+### IntelliJ IDEA
+version: 2026.1.3.
 
 ---
 ### Dependencies.
-#### - snap.
+#### The Java Development Kit (JDK).
 ````
+sudo apt install openjdk-8-jdk
+````
+#### Java Runtime Eenvironment (JRE).
+````
+sudo apt install openjdk-8-jre
+````
+#### GCC toolchain.
+```` 
+sudo apt install build-essential gdb
+````
+#### snapd.
+```` 
 sudo apt install snapd
 ````
+#### IntelliJ-idea.
+````` 
+sudo snap install intellij-idea --channel=2026.1/stable --classic
+`````
 
-#### - GCC toolchain.
+#### Java Native Access Library.
+##### edit pom.xml.
 ````
-sudo apt install build-essential
-````
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.gurkenlabs</groupId>
+            <artifactId>input4j</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+            <version>5.13.0</version>
+        </dependency>
+    </dependencies>
 
-#### - CMake.
-````
-sudo apt install cmake
-````
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>10</source>
+                    <target>10</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>10</source>
+                    <target>10</target>
+                </configuration>
+            </plugin>
+        </plugins>
 
-#### - CLion.
-````
-sudo snap install clion --classic
+    </build>
 ````
 
 ---
-## Building - Compiler Terminal Commands.
-### CLIB_WriteEnableForThreadsAt_STACK.so
-````
-cmake -B build
-````
-````
-cmake --build build
-````
+## Implements.
+ - ### CLIBWriteQue dll(s).
+ - ### CLBILaunchQue dll(s).
+ - ### OpenEpiCentre dll.
 
 ---
-## Implementation.
-### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
- - GitHub ReadMe - How To Guide.
+## How To Guildes.
 
-### WrAPPer Imports and Native IO.
- - [WrAPPer Imports and Native IO.](https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/blob/CLIB_WriteQueForThreadsAt_Stack/README/Import-Export%20Warpper(s).md)
+---
+### Wrapper Imports / Exports and Native IO.
+
 ---
 ---
