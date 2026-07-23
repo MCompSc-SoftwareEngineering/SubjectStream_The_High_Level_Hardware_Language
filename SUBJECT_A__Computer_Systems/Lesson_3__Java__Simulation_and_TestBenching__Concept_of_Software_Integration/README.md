@@ -3,7 +3,6 @@
 ---
 ## Branches.
  - main.
- - DEVELOPMENT.
 
 ---
 ## Using.
