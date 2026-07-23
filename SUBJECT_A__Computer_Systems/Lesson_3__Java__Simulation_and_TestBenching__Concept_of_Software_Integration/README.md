@@ -1,52 +1,61 @@
 # Java: TestBench and Implementation.
 
+---
+## Branches.
+ - main.
+ - DEVELOPMENT.
 
 ---
 ## Using.
-### LINUX Ubuntu.
-**version:** Ubuntu 24.04.4 LTS.
+### Ubuntu LINUX.
+version: Ubuntu 24.04.4 LTS
 
-### CLion. 
-**Version:** 2026.1.2.
+### IntelliJ IDEA
+version: 2026.1.3.
 
 ---
 ### Dependencies.
-#### - snap.
+#### The Java Development Kit (JDK).
 ````
+sudo apt install openjdk-8-jdk
+````
+#### Java Runtime Eenvironment (JRE).
+````
+sudo apt install openjdk-8-jre
+````
+#### GCC toolchain.
+```` 
+sudo apt install build-essential gdb
+````
+#### snapd.
+```` 
 sudo apt install snapd
 ````
+#### IntelliJ-idea.
+````` 
+sudo snap install intellij-idea --channel=2026.1/stable --classic
+`````
 
-#### - GCC toolchain.
+#### Java Native Access Library.
+##### edit pom.xml.
 ````
-sudo apt install build-essential
-````
-
-#### - CMake.
-````
-sudo apt install cmake
-````
-
-#### - CLion.
-````
-sudo snap install clion --classic
-````
-
----
-## Building - Compiler Terminal Commands.
-### CLIB_WriteEnableForThreadsAt_STACK.so
-````
-cmake -B build
-````
-````
-cmake --build build
+ <dependency>
+	    <groupId>net.java.dev.jna</groupId>
+	    <artifactId>jna</artifactId>
+	    <version>5.13.0</version> <!-- Use the latest version -->
+	</dependency>
+	<dependency>
+	    <groupId>net.java.dev.jna</groupId>
+	    <artifactId>jna-platform</artifactId>
+	    <version>5.13.0</version> <!-- Use the latest version -->
+	</dependency>
 ````
 
 ---
-## Implementation.
-### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
- - GitHub ReadMe - How To Guide.
+## How To Guildes.
 
-### WrAPPer Imports and Native IO.
- - [WrAPPer Imports and Native IO.](https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/blob/CLIB_WriteQueForThreadsAt_Stack/README/Import-Export%20Warpper(s).md)
+---
+### Wrapper Imports / Exports and Native IO.
+
 ---
 ---
