@@ -5,7 +5,7 @@ import java.io.IOException;
 public class IO
 {
     public static Framework _stat_CLASS_framework;
-// public.
+    // public.
     public static Framework app_generate_Program() {
         System.out.printf("entered DESKTOP APPLICATION generate_Program().%n");
         System.out.printf("started architectured classes - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE.%n");
@@ -14,7 +14,7 @@ public class IO
         System.out.printf("done architectured classes - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE.%n");
         return stat_CLASS_get_Framework();
     }
-// private.
+    // private.
     private static void stat_CLASS_boot1_DEFINE_framework()
     {
         System.out.printf("entered stat_CLASS_boot1_DEFINE_framework().%n");
@@ -26,7 +26,7 @@ public class IO
         _stat_CLASS_framework = new Framework();
         try {
             stat_CLASS_get_Framework();
-        } 
+        }
         catch (NullPointerException e) {
             System.out.printf("NullPointerException.%n");
         }

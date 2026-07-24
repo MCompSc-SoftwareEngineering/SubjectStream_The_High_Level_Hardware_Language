@@ -5,11 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>SUBJECT_A__Computer_Systems</groupId>
-    <artifactId>Lesson_3__Java__TestBenching_And_Implementation</artifactId>
+    <artifactId>Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
 
     <dependencies>
@@ -55,7 +58,6 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
 
 </project>

@@ -1,7 +1,7 @@
 CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyDLL.cpp.o: \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/CLIB_MyDLL.cpp \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/CLIB_MyDLL.cpp \
  /usr/include/stdc-predef.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/CLIB_MyDLL.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/CLIB_MyDLL.h \
  /usr/include/c++/15/cfloat \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -173,13 +173,13 @@ CMakeFiles/CLIB_MyDLL__Cpp_Introduction_To_Dynamic_Link_Library.dir/src/CLIB_MyD
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
  /usr/include/c++/15/bits/istream.tcc \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Algorithms.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Input.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Output.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Framework.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__App.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__App.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__Data.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__Input.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__Output.h \
- /home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Global.h
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Algorithms.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Input.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Output.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Framework.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__App.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__App.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__Data.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__Input.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/../include/Introduction_To_Dynamic_Link_Library__Output.h \
+ /home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/src/../include/Introduction_To_Dynamic_Link_Library__Global.h

@@ -1,6 +1,5 @@
 package SIMULATION;
 import engine.Framework;
-import engine.Global;
 import io.*;
 import structs.Input;
 import structs.Output;
@@ -16,6 +15,10 @@ import java.util.Scanner;
 public class Simulation
 {
     private static Framework obj;
+    public static Input[] _stat_REG_doubleBuffer__Input;
+    public static Output[] _stat_REG_doubleBuffer__Output;
+    public static boolean _stat_REG_flag_sideToWrtie_doubleBuffer__Intput;
+    public static boolean _stat_REG_flag_sideToWrtie_doubleBuffer__Output;
     public static Input _SIM_stat_REG_input_Sample;
     public static Output _SIM_stat_REG_output_Sample;
     private static Scanner _stat_REG_scanner;
@@ -43,7 +46,7 @@ public class Simulation
         boolean doneOnce = false;
         boolean checkPass = false;
         while(!checkPass) {
-            WriteQue_ConditionCode.app_FUNCT_write_Start(1);
+            WriteQue_ConditionCode.app_FUNCT_write_Start(2);
             if (!doneOnce)
             {
                 obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_set_Item_On_List_Of_Flag_ThreadInitialised(threadId, true);
@@ -60,63 +63,43 @@ public class Simulation
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
-            WriteQue_ConditionCode.app_FUNCT_write_End(1);
+            WriteQue_ConditionCode.app_FUNCT_write_End(2);
         }
         System.out.printf("thread " + threadId + ": Initialised Thread.%n");
         checkPass = false;
         boolean temp = true;
         while(!checkPass) {
-            WriteQue_ConditionCode.app_FUNCT_write_Start(1);
-            while(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                temp = true;
-                if(!WriteQue_ConditionCode.app_FUNCT_get_flag_isPGM_INSTNATIATED()) {
-                    temp = false;
-                    System.out.printf("thread " + threadId + ": PROGRAM NOT INSTANTIATED.%n");
-                }
-                if(!WriteQue_Simulation_InputSamples.app_FUNCT_get_flag_isPGM_INSTNATIATED()) {
-                    temp = false;
-                    System.out.printf("thread " + threadId + ": PROGRAM NOT INSTANTIATED.%n");
-                }
-                if(!WriteQue_Simulation_OutputSamples.app_FUNCT_get_flag_isPGM_INSTNATIATED()) {
-                    temp = false;
-                    System.out.printf("thread " + threadId + ": PROGRAM NOT INSTANTIATED.%n");
-                }
-                if(!WriteQue_SimulationIO.app_FUNCT_get_flag_isPGM_INSTNATIATED()) {
-                    temp = false;
-                    System.out.printf("thread " + threadId + ": PROGRAM NOT INSTANTIATED.%n");
-                }
-                if(!MyDLL.stat_App_FUNCT_MyLIBS__CLIB_MyDLL__get_flag_isPGM_INSTANTIATED()) {
-                    temp = false;
-                    System.out.printf("thread " + threadId + ": PROGRAM NOT INSTANTIATED.%n");
+            WriteQue_ConditionCode.app_FUNCT_write_Start(2);
+            if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
+                if (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
+                    checkPass = true;
                 }
             }
-            obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_set_Flag_is_SystemInitialised(temp);
-            if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                checkPass = true;
-            }
-            WriteQue_ConditionCode.app_FUNCT_write_End(1);
+            WriteQue_ConditionCode.app_FUNCT_write_End(2);
         }
         System.out.printf("thread " + threadId + ": FLAG SystemInitialised() => " + obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised() + ".%n");
         System.out.printf("thread " + threadId + ": System Initialised.%n");
         System.out.printf("thread " + threadId + ": System Instantiated.%n");
         System.out.printf("thread " + threadId + ": Starting THREAD.%n");
         checkPass = false;
-        while(!checkPass) {
-            WriteQue_ConditionCode.app_FUNCT_write_Start(1);
-            while (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                WriteQue_ConditionCode.app_FUNCT_write_End(1);
-                WriteQue_SimulationIO.app_FUNCT_write_Start(1);
 
-                WriteQue_SimulationIO.app_FUNCT_write_End(1);
-            }
+        while(!checkPass) {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(1);
+            System.out.printf("thread " + threadId + ": OPEN ACCESS 'WriteQue_SimulationIO' @id=1.%n");
             WriteQue_ConditionCode.app_FUNCT_write_Start(1);
+            if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
+
+                obj.dyn_CLASS_get_SIMULATION().app_Do_Process_Of_Input(obj);
+                obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
+            }
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(1);
+            System.out.printf("thread " + threadId + ": CLOSE ACCESS 'WriteQue_SimulationIO' @id=1.%n");
+            WriteQue_SimulationIO.app_FUNCT_write_End(1);
         }
     }
-
     public static void Thread_Output_Draw(Framework obj, byte threadId) {
         System.out.printf("thread " + threadId + ": Enter THREAD member function on thread.%n");
         boolean doneOnce = false;
@@ -146,12 +129,12 @@ public class Simulation
         boolean temp = true;
         while(!checkPass) {
             WriteQue_ConditionCode.app_FUNCT_write_Start(2);
-            while(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
+            if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 if (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                     checkPass = true;
                 }
-                WriteQue_ConditionCode.app_FUNCT_write_End(2);
             }
+            WriteQue_ConditionCode.app_FUNCT_write_End(2);
         }
         System.out.printf("thread " + threadId + ": FLAG SystemInitialised() => " + obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised() + ".%n");
         System.out.printf("thread " + threadId + ": System Initialised.%n");
@@ -159,18 +142,18 @@ public class Simulation
         System.out.printf("thread " + threadId + ": Starting THREAD.%n");
         checkPass = false;
         while(!checkPass) {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(2);
+            System.out.printf("thread " + threadId + ": OPEN ACCESS 'WriteQue_SimulationIO' @id=2.%n");
             WriteQue_ConditionCode.app_FUNCT_write_Start(2);
-            while (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                WriteQue_ConditionCode.app_FUNCT_write_End(2);
-                WriteQue_SimulationIO.app_FUNCT_write_Start(2);
-
-                WriteQue_SimulationIO.app_FUNCT_write_End(2);
+            if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
+                obj.dyn_CLASS_get_SIMULATION().app_Do_Process_Of_Output(obj);
             }
-            WriteQue_ConditionCode.app_FUNCT_write_Start(2);
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(2);
+            System.out.printf("thread " + threadId + ": CLOSE ACCESS 'WriteQue_SimulationIO' @id=2.%n");
+            WriteQue_SimulationIO.app_FUNCT_write_End(2);
         }
     }
     public void Terminate_stat_REG_scanner()
@@ -178,47 +161,44 @@ public class Simulation
         _stat_REG_scanner.close();
     }
     public void sim_Get_Praise_Event_Id_And_Data(Input input) {
-        while (_stat_REG_scanner.hasNextLine()) {
-            System.out.printf("Enter PraiseEventId: ");
-            int praiseEventId = _stat_REG_scanner.nextByte(); // Program waits here
-            input.dyn_REG_set_Input_praiseId(praiseEventId);
-            input.dyn_REG_set_InputSubset(obj, praiseEventId);
-            switch(input.dyn_REG_get_Input_praiseId())
-            {
-                case (int)0:
-                    Input_praise0 input_subset0 = (Input_praise0)input.dyn_REG_get_InputSubset();
-                    System.out.printf("Enter _stat_REG_scanner Subset0 valueA: ");
-                    input_subset0.dyn_REG_set_input_praise0_valueA(_stat_REG_scanner.nextDouble());
-                    System.out.printf("Enter _stat_REG_scanner Subset0 valueB: ");
-                    input_subset0.dyn_REG_set_input_praise0_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
-                    break;
+        System.out.printf("Enter PraiseEventId: ");
+        int praiseEventId = _stat_REG_scanner.nextByte(); // Program waits here
+        input.dyn_REG_set_Input_praiseId(praiseEventId);
+        input.dyn_REG_set_InputSubset(obj, praiseEventId);
+        switch(input.dyn_REG_get_Input_praiseId())
+        {
+            case (int)0:
+                Input_praise0 input_subset0 = (Input_praise0)input.dyn_REG_get_InputSubset();
+                System.out.printf("Enter _stat_REG_scanner Subset0 valueA: ");
+                input_subset0.dyn_REG_set_input_praise0_valueA(_stat_REG_scanner.nextDouble());
+                System.out.printf("Enter _stat_REG_scanner Subset0 valueB: ");
+                input_subset0.dyn_REG_set_input_praise0_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
+                break;
 
-                case (int)1:
-                    Input_praise1 input_subset1 = (Input_praise1)input.dyn_REG_get_InputSubset();
-                    System.out.printf("Enter _stat_REG_scanner Subset1 valueA: ");
-                    input_subset1.dyn_REG_set_input_praise1_valueA(_stat_REG_scanner.nextDouble());
-                    System.out.printf("Enter _stat_REG_scanner Subset1 valueB: ");
-                    input_subset1.dyn_REG_set_input_praise1_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
-                    break;
+            case (int)1:
+                Input_praise1 input_subset1 = (Input_praise1)input.dyn_REG_get_InputSubset();
+                System.out.printf("Enter _stat_REG_scanner Subset1 valueA: ");
+                input_subset1.dyn_REG_set_input_praise1_valueA(_stat_REG_scanner.nextDouble());
+                System.out.printf("Enter _stat_REG_scanner Subset1 valueB: ");
+                input_subset1.dyn_REG_set_input_praise1_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
+                break;
 
-                case (int)2:
-                    Input_praise2 input_suber2 = (Input_praise2)input.dyn_REG_get_InputSubset();
-                    System.out.printf("Enter _stat_REG_scanner Subset2 valueA: ");
-                    input_suber2.dyn_REG_set_input_praise2_valueA(_stat_REG_scanner.nextDouble());
-                    System.out.printf("Enter _stat_REG_scanner Subset2 valueB: ");
-                    input_suber2.dyn_REG_set_input_praise2_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
-                    break;
+            case (int)2:
+                Input_praise2 input_suber2 = (Input_praise2)input.dyn_REG_get_InputSubset();
+                System.out.printf("Enter _stat_REG_scanner Subset2 valueA: ");
+                input_suber2.dyn_REG_set_input_praise2_valueA(_stat_REG_scanner.nextDouble());
+                System.out.printf("Enter _stat_REG_scanner Subset2 valueB: ");
+                input_suber2.dyn_REG_set_input_praise2_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
+                break;
 
-                case (int)3:
-                    Input_praise3 input_suber3 = (Input_praise3)input.dyn_REG_get_InputSubset();
-                    System.out.printf("Enter _stat_REG_scanner Subset3 valueA: ");
-                    input_suber3.dyn_REG_set_input_praise3_valueA(_stat_REG_scanner.nextDouble());
-                    System.out.printf("Enter _stat_REG_scanner Subset3 valueB: ");
-                    input_suber3.dyn_REG_set_input_praise3_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
-                    break;
-            }
+            case (int)3:
+                Input_praise3 input_suber3 = (Input_praise3)input.dyn_REG_get_InputSubset();
+                System.out.printf("Enter _stat_REG_scanner Subset3 valueA: ");
+                input_suber3.dyn_REG_set_input_praise3_valueA(_stat_REG_scanner.nextDouble());
+                System.out.printf("Enter _stat_REG_scanner Subset3 valueB: ");
+                input_suber3.dyn_REG_set_input_praise3_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
+                break;
         }
-        obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
     }
     public void sim_Print_PraiseEvent(Output output) {
         obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(false);
@@ -250,83 +230,17 @@ public class Simulation
         WriteQue_Simulation_InputSamples.app_FUNCT_write_Start(0);
         obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewInputReady(false);
         _SIM_stat_REG_input_Sample = obj.dyn_STRUCT_get_Input();
-        //_stat_REG_Buffer_For_Input = new byte[1024]; //todo network capture and write to buffer.
-        //app_Decode_NetworkingSteam_At_Server_Input_Recieve(_SIM_stat_REG_input_Sample, _stat_REG_Buffer_For_Input);
-        obj.dyn_CLASS_get_SIMULATION().sim_Get_Praise_Event_Id_And_Data(obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Input_Sample());//SIMULATION
-        switch (obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Input_Sample().dyn_REG_get_Input_praiseId())
-        {
-            case (int)0:
-                Input_praise0 subset_of_input_for_praise0 = (Input_praise0)obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Input_Sample().dyn_REG_get_InputSubset();
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_a(subset_of_input_for_praise0.dyn_REG_get_input_praise0_valueA());
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_b(subset_of_input_for_praise0.dyn_REG_get_input_praise0_valueB());
-                MyDLL.stat_do_FUNCT_MyLIBS__CLIB_MyDLL__add_a_b();
-                break;
-
-            case (int)1:
-                Input_praise1 subset_of_input_for_praise1 = (Input_praise1)obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Input_Sample().dyn_REG_get_InputSubset();
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_a(subset_of_input_for_praise1.dyn_REG_get_input_praise1_valueA());
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_b(subset_of_input_for_praise1.dyn_REG_get_input_praise1_valueB());
-                MyDLL.stat_do_FUNCT_MyLIBS__CLIB_MyDLL__subtract_a_b();
-                break;
-
-            case (int)2:
-                Input_praise2 subset_of_input_for_praise2 = (Input_praise2)obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Input_Sample().dyn_REG_get_InputSubset();
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_a(subset_of_input_for_praise2.dyn_REG_get_input_praise2_valueA());
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_b(subset_of_input_for_praise2.dyn_REG_get_input_praise2_valueB());
-                MyDLL.stat_do_FUNCT_MyLIBS__CLIB_MyDLL__multiply_a_b();
-                break;
-
-            case (int)3:
-                Input_praise3 subset_of_input_for_praise3 = (Input_praise3)obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Input_Sample().dyn_REG_get_InputSubset();
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_a(subset_of_input_for_praise3.dyn_REG_get_input_praise3_valueA());
-                MyDLL.stat_set_FUNCT_MyLIBS__CLIB_MyDLL_Input__value_b(subset_of_input_for_praise3.dyn_REG_get_input_praise3_valueB());
-                MyDLL.stat_do_FUNCT_MyLIBS__CLIB_MyDLL__divide_a_b();
-                break;
-        }
+        obj.dyn_CLASS_get_SIMULATION().sim_Get_Praise_Event_Id_And_Data(_SIM_stat_REG_input_Sample);//SIMULATION
         WriteQue_Simulation_InputSamples.app_FUNCT_write_End(0);
     }
     public void app_Do_Process_Of_Output(Framework obj) {
         WriteQue_Simulation_OutputSamples.app_FUNCT_write_Start(0);
-        //_stat_REG_Buffer_For_Ouput = new byte[1024];
         _SIM_stat_REG_output_Sample = obj.dyn_STRUCT_get_Output();
         if(obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_get_flag__isNewOutputReady()) {
-
-
-            switch (obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_Output_praiseId()) {
-                case 0:
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_Output_praiseId(0);
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_OutputSubset(obj, obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_Output_praiseId());
-                    Output_praise0 subset_of_output_for_praise0 = (Output_praise0) obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_OutputSubset();
-                    subset_of_output_for_praise0.dyn_REG_set_output_praise0_value(MyDLL.stat_get_FUNCT_MyLIBS__CLIB_MyDLL__Output__value());
-                    break;
-
-                case 1:
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_Output_praiseId(1);
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_OutputSubset(obj, obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_Output_praiseId());
-                    Output_praise1 subset_of_output_for_praise1 = (Output_praise1) obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_OutputSubset();
-                    subset_of_output_for_praise1.dyn_REG_set_output_praise1_value(MyDLL.stat_get_FUNCT_MyLIBS__CLIB_MyDLL__Output__value());
-                    break;
-
-                case 2:
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_Output_praiseId(2);
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_OutputSubset(obj, obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_Output_praiseId());
-                    Output_praise2 subset_of_output_for_praise2 = (Output_praise2) obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_OutputSubset();
-                    subset_of_output_for_praise2.dyn_REG_set_output_praise2_value(MyDLL.stat_get_FUNCT_MyLIBS__CLIB_MyDLL__Output__value());
-                    break;
-
-                case 3:
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_Output_praiseId(3);
-                    obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_set_OutputSubset(obj, obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_Output_praiseId());
-                    Output_praise3 subset_of_output_for_praise3 = (Output_praise3) obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample().dyn_REG_get_OutputSubset();
-                    subset_of_output_for_praise3.dyn_REG_set_output_praise3_value(MyDLL.stat_get_FUNCT_MyLIBS__CLIB_MyDLL__Output__value());
-                    break;
-            }
-            //app_Encode_NetworkingSteam_At_Server_Output_Send(obj, _SIM_stat_REG_output_Sample, _stat_REG_Buffer_For_Ouput);
-            obj.dyn_CLASS_get_SIMULATION().sim_Print_PraiseEvent(obj.dyn_CLASS_get_SIMULATION().dyn_REG_get_Output_Sample());
-            //todo send.
+            obj.dyn_CLASS_get_SIMULATION().sim_Print_PraiseEvent(_SIM_stat_REG_output_Sample);
             obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
-            WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(0);
         }
+        WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(0);
     }
     public void dyn_REG_boot1_DEFINE__SIMULATION() {
         stat_REG_boot1_DEFINE__SIMULATION();

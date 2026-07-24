@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/brenton-james/MCompSc_SoftwareEngineering/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/CMakeLists.txt"
+  "/home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library/CMakeLists.txt"
   "CMakeFiles/4.2.3/CMakeCCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeSystem.cmake"

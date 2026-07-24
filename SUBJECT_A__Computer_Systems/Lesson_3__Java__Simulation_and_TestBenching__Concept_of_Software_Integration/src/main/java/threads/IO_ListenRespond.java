@@ -92,14 +92,15 @@ public class IO_ListenRespond
                 WriteQue_ConditionCode.app_FUNCT_write_End(0);
 
                 WriteQue_SimulationIO.app_FUNCT_write_Start(0);
-                System.out.printf("thread " + threadId + ": ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + ": INPUT : OPEN ACCESS WriteQue_SimulationIO at Id=0.%n");
                 if (_stat_REG_flag__isNewInputReady) {
                     stat_App_Decode_NetworkingSteam_At_Server_Input_Recieve(obj, _SIM_stat_REG_input_Sample, stat_REG_get_Buffer__Input());
                 }
-                System.out.printf("thread " + threadId + ": CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + ": INPUT : CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
                 WriteQue_SimulationIO.app_FUNCT_write_End(0);
 
                 WriteQue_SimulationIO.app_FUNCT_write_Start(0);
+                System.out.printf("thread " + threadId + ": DO TASK : OPEN ACCESS WriteQue_SimulationIO at Id=0.%n");
                 System.out.printf("thread " + threadId + ": STARTING TASK.%n");
                 switch (_SIM_stat_REG_input_Sample.dyn_REG_get_Input_praiseId()) {
                     case 0:
@@ -118,16 +119,17 @@ public class IO_ListenRespond
                         MyDLL.stat_do_FUNCT_MyLIBS__CLIB_MyDLL__multiply_a_b();
                         break;
                 }
-                System.out.printf("thread " + threadId + ": DONE TASK.%n");
+                System.out.printf("thread " + threadId + ": INPUT : DONE TASK.%n");
                 obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
+                System.out.printf("thread " + threadId + ": DO TASK : CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
                 WriteQue_SimulationIO.app_FUNCT_write_End(0);
 
                 WriteQue_SimulationIO.app_FUNCT_write_Start(0);
-                System.out.printf("thread " + threadId + ": ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + ": OUTPUT : ACCESS WriteQue_SimulationIO at Id=0.%n");
                 if (_stat_REG_flag__isNewOutputReady) {
                     stat_App_Encode_NetworkingSteam_At_Server_Output_Send(obj, _SIM_stat_REG_output_Sample, stat_REG_get_Buffer__Ouput());
                 }
-                System.out.printf("thread " + threadId + ": CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + ": OUTPUT : CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
                 WriteQue_SimulationIO.app_FUNCT_write_End(0);
             }
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
