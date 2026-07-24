@@ -1,6 +1,9 @@
-# SOULTION - SubjectStream_The_High_Level_Hardware_Language.
-### SUBJECT_A__Computer_Systems.
-#### Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers.
+# SubjectStream_The_High_Level_Hardware_Language.
+## SUBJECT_A__Computer_Systems.
+### Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers.
+
+---
+# SOULTION - CLIB_The_DLL__Write_Que_For_Thread_At_Registers
 
 ---
 ## Using.
