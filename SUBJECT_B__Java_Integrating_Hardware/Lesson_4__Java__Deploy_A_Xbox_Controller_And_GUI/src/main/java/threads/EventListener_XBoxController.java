@@ -150,7 +150,7 @@ public class EventListener_XBoxController {
                                         case NULL:
                                             break;
                                     }
-                                   // MenuMain.printConsoleAndOutput(component + " => " + component.getData());
+                                   MenuMain.printConsoleAndOutput(component + " => " + component.getData());
                                 }
                                 cycleToNextComponent();
                             }
