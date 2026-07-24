@@ -1,6 +1,6 @@
 # SubjectStream_The_High_Level_Hardware_Language.
-## SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing.
-### Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre.
+## SUBJECT_A__Computer_Systems.
+### Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration.
 
 ---
 # RESOURCE - Java: TestBench and Implementation.
