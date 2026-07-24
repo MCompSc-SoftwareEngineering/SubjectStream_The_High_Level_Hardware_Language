@@ -77,14 +77,6 @@ sudo snap install intellij-idea --channel=2026.1/stable --classic
                     <target>10</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>10</source>
-                    <target>10</target>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 ````
