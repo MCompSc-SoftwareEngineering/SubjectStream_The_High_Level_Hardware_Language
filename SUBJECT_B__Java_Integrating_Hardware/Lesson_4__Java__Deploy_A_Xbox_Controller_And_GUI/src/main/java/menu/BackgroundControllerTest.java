@@ -1,6 +1,7 @@
 package menu;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 import javax.imageio.ImageIO;
@@ -10,10 +11,10 @@ public class BackgroundControllerTest extends JPanel {
 
     public BackgroundControllerTest(String resourcePath) {
         try {
-            // Read image from the IntelliJ project resources directory
-            backgroundImage = ImageIO.read(Objects.requireNonNull(getClass().getResource(resourcePath)));
-        } catch (IOException | NullPointerException e) {
-            System.err.println("Error: Could not load background image from path " + resourcePath);
+            backgroundImage = ImageIO.read(new File(resourcePath));
+        } catch (IOException e) {
+            System.out.println("Error: Could not load image.");
+            e.printStackTrace();
         }
     }
 

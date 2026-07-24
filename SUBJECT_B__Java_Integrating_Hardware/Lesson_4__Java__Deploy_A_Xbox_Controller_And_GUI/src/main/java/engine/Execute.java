@@ -98,8 +98,8 @@ public class Execute
             System.out.printf("exiting stat_REG_boot0_DECLAIRE_Execute().%n");
     }
 // private.
-    private void dyn_APP_Draw_2D_Menu() {
-        stat_CLASS_boot3_INITIALISE_MenuMain();
+    private void dyn_APP_Draw_2D_Menu(Framework obj) {
+        stat_CLASS_boot3_INITIALISE_MenuMain(obj);
     }
     static void stat_CLASS_boot1_DEFINE_Execute_Control() {
         System.out.printf("entered stat_CLASS_boot1_DEFINE_Execute_Control().%n");
@@ -122,12 +122,12 @@ public class Execute
         }
         System.out.printf("exiting stat_CLASS_boot3_INITIALISE_Execute_Control().%n");
     }
-    private static void stat_CLASS_boot3_INITIALISE_MenuMain() {
+    private static void stat_CLASS_boot3_INITIALISE_MenuMain(Framework obj) {
         System.out.printf("entered stat_CLASS_boot3_INITIALISE_Execute_Control().%n");
         _stat_CLASS_MenuMain = new MenuMain();
         try {
             SwingUtilities.invokeLater(() -> {
-                stat_CLASS_get_MenuMain().createAndShowGUI_MenuMain();
+                stat_CLASS_get_MenuMain().createAndShowGUI_MenuMain(obj);
             });
         }
         catch (NullPointerException e) {
@@ -161,7 +161,7 @@ public class Execute
         for (int threadId = 0; threadId < _stat_REG_List_Of_Threads.length; threadId++)
         {
             int finalThreadId = threadId;
-            _stat_REG_List_Of_Threads[threadId] = new Thread(() -> obj.dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_APP_Draw_2D_Menu());
+            _stat_REG_List_Of_Threads[threadId] = new Thread(() -> obj.dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_APP_Draw_2D_Menu(obj));
             //finalThreadId++;
             //_stat_REG_List_Of_Threads[threadId] = new Thread(() -> obj.dyn_THREAD_get_EventListener_XBoxController().doScanOfXBoxControllers(obj));
         }
