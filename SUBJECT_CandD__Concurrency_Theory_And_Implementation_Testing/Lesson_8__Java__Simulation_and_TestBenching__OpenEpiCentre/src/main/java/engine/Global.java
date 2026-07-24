@@ -79,16 +79,9 @@ public class Global
     public static double stat_CONVERT_LsbByteArray_To_LsbDouble(byte[] byteArray)
     {
         if (byteArray.length != 8) {
-            throw new IllegalArgumentException("Byte array must have exactly 4 bytes.%n");
+            throw new IllegalArgumentException("Byte array must have exactly 8 bytes.%n");
         }
         return ByteBuffer.wrap(byteArray).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-    }
-    public static double stat_CONVERT_LsbByteArray_To_LsbFloat(byte[] byteArray)
-    {
-        if (byteArray.length != 4) {
-            throw new IllegalArgumentException("Byte array must have exactly 4 bytes.%n");
-        }
-        return ByteBuffer.wrap(byteArray).order(ByteOrder.LITTLE_ENDIAN).getFloat();
     }
     public static int stat_CONVERT_LsbByteArray_To_LsbInt(byte[] byteArray)
     {
@@ -104,10 +97,6 @@ public class Global
     public static byte[] stat_CONVERT_LsbDouble_To_LsbByteArray(double value)
     {
         return stat_CONVERT_MsbByteArray_To_LsbByteArray(ByteBuffer.allocate(8).putDouble(value).array());
-    }
-    public static byte[] stat_CONVERT_LsbFloat_To_LsbByteArray(double value)
-    {
-        return stat_CONVERT_MsbByteArray_To_LsbByteArray(ByteBuffer.allocate(4).putDouble(value).array());
     }
     public static void stat_CLASS_boot0_DECLAIRE_Global()
     {

@@ -88,7 +88,7 @@ public class IO_ListenRespond
             WriteQue_SimulationIO.app_FUNCT_write_Start(0);
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                System.out.printf("thread " + threadId + ": ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + " INPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
                 if (stat_REG_get_flag__isNewInputReady()) {
                     WriteQue_ConditionCode.app_FUNCT_write_End(0);
                     //stat_App_Decode_NetworkingSteam_At_Server_Input_Recieve(obj, _SIM_stat_REG_input_Sample, stat_REG_get_Buffer__Input());
@@ -126,28 +126,51 @@ public class IO_ListenRespond
                 else {
                     WriteQue_ConditionCode.app_FUNCT_write_End(0);
                 }
-                System.out.printf("thread " + threadId + ": CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + " INPUT: CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
                 WriteQue_SimulationIO.app_FUNCT_write_End(0);
 
                 WriteQue_SimulationIO.app_FUNCT_write_Start(0);
-                System.out.printf("thread " + threadId + ": ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + " OUTPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
                 WriteQue_ConditionCode.app_FUNCT_write_Start(0);
                 if (OpenEpiCentre.CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend()) {
                     WriteQue_ConditionCode.app_FUNCT_write_End(0);
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
-                    _SIM_stat_REG_output_Sample[] = OpenEpiCentre.
+                    _SIM_stat_REG_output_Sample.dyn_REG_set_Output_praiseId(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId());
+                    _SIM_stat_REG_output_Sample.dyn_REG_set_OutputSubset(obj, OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId());
+                    switch (OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId())
+                    {
+                        case (int)0:
+                            Output_praise0 subset_of_output_for_praise0 = (Output_praise0)_SIM_stat_REG_output_Sample.dyn_REG_get_OutputSubset();
+                            subset_of_output_for_praise0.dyn_REG_set_output_praise0_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value());
+                            break;
+
+                        case (int)1:
+                            Output_praise1 subset_of_output_for_praise1 = (Output_praise1)_SIM_stat_REG_output_Sample.dyn_REG_get_OutputSubset();
+                            subset_of_output_for_praise1.dyn_REG_set_output_praise1_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value());
+                            break;
+
+                        case (int)2:
+                            Output_praise2 subset_of_output_for_praise2 = (Output_praise2)_SIM_stat_REG_output_Sample.dyn_REG_get_OutputSubset();
+                            subset_of_output_for_praise2.dyn_REG_set_output_praise2_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value());
+                            break;
+
+                        case (int)3:
+                            Output_praise3 subset_of_output_for_praise3 = (Output_praise3)_SIM_stat_REG_output_Sample.dyn_REG_get_OutputSubset();
+                            subset_of_output_for_praise3.dyn_REG_set_output_praise3_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value());
+                            break;
+                    }
                     //stat_App_Encode_NetworkingSteam_At_Server_Output_Send(obj, _SIM_stat_REG_output_Sample, stat_REG_get_Buffer__Ouput());
                 }
                 else {
                     WriteQue_ConditionCode.app_FUNCT_write_End(0);
                 }
-                System.out.printf("thread " + threadId + ": CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
             }
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(0);
+            System.out.printf("thread " + threadId + " OUTPUT: CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
             WriteQue_SimulationIO.app_FUNCT_write_End(0);
         }
         obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().app_Terminate_All_Threads(obj);

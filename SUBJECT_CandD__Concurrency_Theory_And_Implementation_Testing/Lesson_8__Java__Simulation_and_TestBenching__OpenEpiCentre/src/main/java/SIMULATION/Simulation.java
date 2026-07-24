@@ -85,6 +85,7 @@ public class Simulation
 
         while(!checkPass) {
             WriteQue_SimulationIO.app_FUNCT_write_Start(1);
+            System.out.printf("thread " + threadId + ": OPEN ACCESS 'WriteQue_SimulationIO' @id=1.%n");
             WriteQue_ConditionCode.app_FUNCT_write_Start(1);
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
 
@@ -95,6 +96,7 @@ public class Simulation
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(1);
+            System.out.printf("thread " + threadId + ": CLOSE ACCESS 'WriteQue_SimulationIO' @id=1.%n");
             WriteQue_SimulationIO.app_FUNCT_write_End(1);
         }
     }
@@ -141,14 +143,16 @@ public class Simulation
         checkPass = false;
         while(!checkPass) {
             WriteQue_SimulationIO.app_FUNCT_write_Start(2);
+            System.out.printf("thread " + threadId + ": OPEN ACCESS 'WriteQue_SimulationIO' @id=2.%n");
             WriteQue_ConditionCode.app_FUNCT_write_Start(2);
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                obj.dyn_CLASS_get_SIMULATION().app_Do_Process_Of_Output();
+                obj.dyn_CLASS_get_SIMULATION().app_Do_Process_Of_Output(obj);
             }
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(2);
+            System.out.printf("thread " + threadId + ": CLOSE ACCESS 'WriteQue_SimulationIO' @id=2.%n");
             WriteQue_SimulationIO.app_FUNCT_write_End(2);
         }
     }

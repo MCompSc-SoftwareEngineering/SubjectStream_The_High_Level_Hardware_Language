@@ -47,9 +47,8 @@ public class Execute
     public void dyn_REG_boot4_INSTANTIATE_Execute() {
         System.out.printf("entered dyn_REG_boot4_INSTANTIATE_Execute().%n");
         int intPrimeDEFAULT = Integer.MAX_VALUE;
-        byte[]  doublePrimeDEFAULT = { Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE, Byte.MAX_VALUE };
-        byte[] bytesPrimeDEFAULT = { Byte.MAX_VALUE };
-        
+        double doublePRimeDEFAULT = Double.MAX_VALUE;
+
         System.out.printf("entered CHECK member function WriteQue_Simulation_InputSamples().%n");
         //WriteQue_Simulation_InputSamples.app_FUNCT_generate_Program();
         Boolean tempA0 = WriteQue_Simulation_InputSamples.app_FUNCT_get_flag_isPGM_INSTNATIATED();
@@ -86,7 +85,7 @@ public class Execute
         OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
         //Pointer tempE0 = OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_generate_Program();
         boolean tempE1 = OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_get_flag_isPGM_INSTANTIATED();
-        OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(doublePrimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(intPrimeDEFAULT);
         OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_terminate_Program();
         OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
         OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input();
@@ -99,16 +98,16 @@ public class Execute
         double tempE8 = OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value();
         double tempE9 = OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise2_Value();
         double tempE10 = OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise3_Value();
-        byte tempE11 = OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId();
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_B(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise1_Value_A(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise1_Value_B(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise2_Value_A(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise2_Value_B(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise3_Value_A(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise3_Value_B(doublePrimeDEFAULT);
-        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(bytesPrimeDEFAULT);
+        int tempE11 = OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId();
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_B(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise1_Value_A(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise1_Value_B(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise2_Value_A(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise2_Value_B(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise3_Value_A(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise3_Value_B(doublePRimeDEFAULT);
+        OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(intPrimeDEFAULT);
         System.out.printf("entered CHECK member functions in MyDLL/.%n");
 
         System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Execute().%n");
