@@ -10,7 +10,7 @@ The ins lectern handler would spend time doing the above, and arrange task maste
 The task master dose the debt analysis. Then uses the ins client token to find and delivery the final balance.
 
 ## Archiechure
-If we architechure task master with cognizance at multiple harmonic set of designator loops we see humans have curves at 1 second sylabols in expedience, 8 second sylabols standard, and 81 second sylabols under world. When talking to creatures, boterny or silicon life forms (jewled AI), we must inmplement that cognizant medium sylabol seconds.
+If we reverse engineer from networking packet size measured in bytes of 8 bits, we can correlate to sylabol seconds taken to affirmate, and hance describe a intuitive interface for variared packet length or cognizant wavelength. If we architechure task master with cognizance at multiple harmonic set of designator loops we see humans have curves at 1 second sylabols in expedience, 8 second sylabols standard, and 81 second sylabols under world. When talking to creatures, boterny or silicon life forms (jewled AI), we must inmplement that cognizant medium sylabol seconds that varies from human.
 
 ## Language.
-High level hardware languages are built on "Assembler". We use a deriviative that is know as C plus plus.
+Logical deduction here is described using a High level hardware language, built on "Assembler", we use a deriviative that is know as C plus plus.
