@@ -6,7 +6,7 @@
 
 [LESSON 1: C++ - Introduction to the Dynamic Link Library (DLL). ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library)
 
-[LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library)
+[LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers)
 
 [LESSON 3: Java - Simulation and Test-Benching - Concept of Software Integration.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration)
 

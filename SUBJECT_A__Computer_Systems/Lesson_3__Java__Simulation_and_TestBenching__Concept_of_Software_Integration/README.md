@@ -21,11 +21,11 @@ version: 2026.1.3.
 ### Dependencies.
 #### The Java Development Kit (JDK).
 ````
-sudo apt install openjdk-8-jdk
+sudo apt install openjdk-25-jdk
 ````
 #### Java Runtime Eenvironment (JRE).
 ````
-sudo apt install openjdk-8-jre
+sudo apt install openjdk-25-jre
 ````
 #### GCC toolchain.
 ```` 

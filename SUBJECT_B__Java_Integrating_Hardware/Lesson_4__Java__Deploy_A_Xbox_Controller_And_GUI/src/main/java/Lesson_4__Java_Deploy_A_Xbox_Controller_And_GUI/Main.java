@@ -1,7 +1,7 @@
-package OpenCFSD;
+package Lesson_4__Java_Deploy_A_Xbox_Controller_And_GUI;
 import engine.Framework;
 import io.ClientAssembly;
-public class App {
+public class Main {
     private static Framework _stat_PGM_ClientAssembly = null;
 
     // public.
