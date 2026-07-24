@@ -1,6 +1,6 @@
 package menu;
 
-import io.WriteQueCLIENTOUTPUTRECIEVE;
+import io.WriteQue_Simulation_OutputSamples;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,14 +22,14 @@ public class MenuMain extends JFrame {
 
     public void createAndShowGUI_MenuMain()
     {
+        WriteQue_Simulation_OutputSamples.app_FUNCT_write_Start(1);
+
         setTitle("");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(800,600);
         setLayout(new BorderLayout(4,4 ));
         setLocationRelativeTo(null);
         setVisible(true);
-
-        WriteQueCLIENTOUTPUTRECIEVE.app_FUNCT_write_Start(1);
 
         manuMain_panelTop = new JPanel();
         manuMain_panelBottom= new JPanel();
@@ -63,7 +63,7 @@ public class MenuMain extends JFrame {
         outputTextArea = new JTextArea();
         manuMain_panelCentre.add(outputTextArea);
 
-        WriteQueCLIENTOUTPUTRECIEVE.app_FUNCT_write_End(1);
+        WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(1);
     }
 
     public static void printConsoleAndOutput(String message) {

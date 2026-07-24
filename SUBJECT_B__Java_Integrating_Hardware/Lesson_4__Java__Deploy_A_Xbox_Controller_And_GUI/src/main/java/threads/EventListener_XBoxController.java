@@ -1,10 +1,11 @@
 package threads;
 import de.gurkenlabs.input4j.InputDevices;
 import engine.Framework;
-import io.WriteQue_InputPerihperalSamples;
 
 import java.io.IOException;
 import java.util.Objects;
+
+import io.WriteQue_Simulation_InputSamples;
 import menu.MenuMain;
 import structs.peripheralSamples.XboxController;
 public class EventListener_XBoxController {
@@ -155,15 +156,15 @@ public class EventListener_XBoxController {
                             }
                         }
                     }
-                    WriteQue_InputPerihperalSamples.app_FUNCT_write_Start(0);
+                    WriteQue_Simulation_InputSamples.app_FUNCT_write_Start(0);
                     for(char controllerId = 0; controllerId < 1; controllerId++) {//todo number of controllers
                         obj.dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_Game_Instance().dyn_APP_saveSampleOfController(controllerId, sampleTEMP[controllerId + 1]);
                     }
-                    WriteQue_InputPerihperalSamples.app_FUNCT_write_End(0);
+                    WriteQue_Simulation_InputSamples.app_FUNCT_write_End(0);
                     for(char corntrollerId = 1; corntrollerId < 2; corntrollerId++) {
                         sampleTEMP[corntrollerId] = sampleTEMP[0];
                     }
-                    Thread.sleep(1000);
+                    Thread.sleep(333);
                 }
             } catch (IOException | InterruptedException e) {
                 throw new RuntimeException(e);

@@ -33,32 +33,5 @@ public class Main {
         System.out.printf("running.%n");
         System.out.printf("==========%n");
         System.out.printf("SIMULATION%n");
-
-
-        //EventListener_XBoxController scanner = new EventListener_XBoxController();
-        //while(scanner == null) { }
-
-        /*
-        SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Swing Background Image Example");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            //frame.setUndecorated(true);
-            frame.setSize(800, 600);
-            //GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            //GraphicsDevice gd = ge.getDefaultScreenDevice();
-            //gd.setFullScreenWindow(frame);
-            //frame.setVisible(true);
-
-            BackgroundPanel backgroundPanel = new BackgroundPanel("main_menu_backgrounds/Xbox_Controll_2D_Diagram_With_Shifts.jpg");
-            backgroundPanel.setLayout(new BorderLayout());
-
-            JButton button = new JButton("Click Me!");
-            backgroundPanel.add(button, BorderLayout.SOUTH);
-
-            frame.add(backgroundPanel);
-            frame.setLocationRelativeTo(null); // Center the window
-            frame.setVisible(true);
-        });
-*/
     }
 }
