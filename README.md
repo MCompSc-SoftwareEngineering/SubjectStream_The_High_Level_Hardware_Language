@@ -1,4 +1,4 @@
-# MIT Teacking Aid.
+# MIT Teaching Aid.
 ## Subject Stream: The High Level Hardware Language, and Implementation.
 
 ---
