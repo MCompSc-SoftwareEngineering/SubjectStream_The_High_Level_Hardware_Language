@@ -57,7 +57,7 @@ LESSON 5: Java - A Simple Game (Pong),
 -
 
 ### Server Assembly.
-- Prerequisite: SUBJECT Charlie & Delta.
+- Prerequisite: SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.
   - Implements: Resource DELTA.
   - Implementa: Resource ECHO.
   - Implements: Resource CHALRIE.
