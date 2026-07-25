@@ -39,3 +39,7 @@ LESSON 5: Java - A Simple Game (Pong),
 - Implements: Resource CHALRIE.
 - Implements: Resource DELTA.
 - Implementa: Resource ECHO.
+  
+## SUBJECT Foxtrot: Concurrrency Full Stack Development.
+
+## SUBJECT Giga: Silicon Life Forms.
