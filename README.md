@@ -16,7 +16,7 @@
 ---
 [LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers).
 
-RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
+TEMPLATE => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
 
 ### - Resource BRAVO.
  - Implements: Resource ALPHA. 
@@ -47,13 +47,16 @@ LESSON 5: Java - A Simple Game (Pong),
 ---
 [LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_6__CLIB_ServerSide__Launch_Que_For_Threads_At_ENDS)
 
-RESOURCE PROVIDED => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/tree/Implementations_CLIB)).
+TEMPLATE => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/tree/Implementations_CLIB).
 
 ### - Resource DELTA.
 - Implements: Resource ALPHA.
 
 ---
 [LESSON 7: CLIB Server-Side - OpenEpiCentre.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_7__CLIB_ServerSide__OpenEpiCentre)
+
+TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu).
+
 ### - Resource ECHO.
 - Implements: Resource ALPHA. 
 - Implements: Resource BRAVO. RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/tree/Implementations_CLIB).
