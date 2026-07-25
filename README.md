@@ -48,10 +48,12 @@ LESSON 5: Java - A Simple Game (Pong),
 
   
 ## SUBJECT Foxtrot: Concurrrency Full Stack Development.
+### Client Assembly.
 - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
   - Implements: Resource ALPHA.
   - Implements: Resource BRAVO.
-  - Implements: Resource CHALRIE.  
+  - Implements: Resource CHALRIE
+### Server Assembly.
 - Prerequisite: SUBJECT Charlie & Delta.
   - Implements: Resource DELTA.
   - Implementa: Resource ECHO.
