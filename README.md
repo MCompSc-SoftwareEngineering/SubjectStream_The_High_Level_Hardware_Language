@@ -7,7 +7,7 @@
  - Introduction.
    
 [LESSON 1: C++ - Introduction to the Dynamic Link Library (DLL). ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library)
-### - Resource ALPHA.
+### - Resource ALPHA: C++, Java - Introduction To High Level Hardware Language
    
 [LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers)
 ### - Resource BRAVO.
@@ -46,20 +46,22 @@ LESSON 5: Java - A Simple Game (Pong),
 
   
 ## SUBJECT Foxtrot: Concurrrency Full Stack Development.
-- Prerequisite: SUBJECT Alpha.
+- Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
   - Implements: Resource ALPHA.
   - Implements: Resource BRAVO.
   - Implements: Resource CHALRIE.  
 - Prerequisite: SUBJECT Charlie & Delta.
   - Implements: Resource DELTA.
   - Implementa: Resource ECHO.
-    
+  - Implements: Resource CHALRIE.
+         
 ## SUBJECT Giga: Silicon Life Forms.
-- Prerequisite: Foxtrot.
-  - Prerequisite: SUBJECT Alpha.
+- Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
+  - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
     - Implements: Resource ALPHA.
     - Implements: Resource BRAVO.
     - Implements: Resource CHALRIE.  
   - Prerequisite: SUBJECT Charlie & Delta.
     - Implements: Resource DELTA.
     - Implementa: Resource ECHO.
+    - Implements: Resource CHALRIE.
