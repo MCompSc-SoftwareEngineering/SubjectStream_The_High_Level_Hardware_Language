@@ -49,6 +49,7 @@ LESSON 5: Java - A Simple Game (Pong),
   
 ## SUBJECT Foxtrot: Concurrrency Full Stack Development.
 ### Client Assembly.
+TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Client_Assembly. .UNDER DEVELOPMENT.
 - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
   - Implements: Resource ALPHA.
   - Implements: Resource BRAVO.
@@ -57,6 +58,7 @@ LESSON 5: Java - A Simple Game (Pong),
 -
 
 ### Server Assembly.
+TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Server_Assembly. .UNDER DEVELOPMENT.
 - Prerequisite: SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.
   - Implements: Resource DELTA.
   - Implementa: Resource ECHO.
@@ -66,8 +68,31 @@ LESSON 5: Java - A Simple Game (Pong),
 
 ## SUBJECT Giga: Silicon Life Forms.
 ### Training Suite.
-
+TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Design_Suite). .UNDER DEVELOPMENT.
+- Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
+  - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
+    - Implements: Resource ALPHA.
+    - Implements: Resource BRAVO.
+    - Implements: Resource CHALRIE.  
+  - Prerequisite: SUBJECT Charlie & Delta.
+    - Implements: Resource DELTA.
+    - Implementa: Resource ECHO.
+    - Implements: Resource CHALRIE.
+    - 
 ### Application Implementaion.
+TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Task_Assembly). .UNDER DEVELOPMENT.
+#### Independent Jewel.
+- Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
+  - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
+    - Implements: Resource ALPHA.
+    - Implements: Resource BRAVO.
+    - Implements: Resource CHALRIE.  
+  - Prerequisite: SUBJECT Charlie & Delta.
+    - Implements: Resource DELTA.
+    - Implementa: Resource ECHO.
+    - Implements: Resource CHALRIE.
+
+#### Hub Jewel - OpenEieCentre.
 - Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
   - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
     - Implements: Resource ALPHA.
