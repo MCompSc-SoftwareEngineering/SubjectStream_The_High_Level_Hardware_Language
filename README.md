@@ -18,11 +18,13 @@
 
 
 ## [SUBJECT Bravo: Java - Integrating Hardware.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_B__Java_Integrating_Hardware)
+- Prerequisite: SUBJECT Alpha: C++, Java - Introduction To High Level Hardware Language.
 
 [LESSON 4: Java - Deploy A Xbox Controller And GUI.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_B__Java_Integrating_Hardware/Lesson_4__Java__Deploy_A_Xbox_Controller_And_GUI)
+ - Implemets: Resource CHALRIE.
 
 LESSON 5: Java - A Simple Game (Pong),
-
+ - Implemets: Resource CHALRIE.
 
 ## [SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing)
 - Prerequisite: SUBJECT Alpha: C++, Java - Introduction To High Level Hardware Language.
