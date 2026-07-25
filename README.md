@@ -1,4 +1,5 @@
-# Subject Stream: The High Level Hardware Language.
+# MIT Teacking Aid.
+## Subject Stream: The High Level Hardware Language, and Implementation.
 
 ---
 ---
@@ -45,6 +46,9 @@ LESSON 5: Java - A Simple Game (Pong),
 
 ---
 [LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_6__CLIB_ServerSide__Launch_Que_For_Threads_At_ENDS)
+
+RESOURCE PROVIDED => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/tree/Implementations_CLIB)).
+
 ### - Resource DELTA.
 - Implements: Resource ALPHA.
 
