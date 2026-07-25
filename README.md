@@ -20,6 +20,6 @@ LESSON 5: Java - A Simple Game (Pong),
 
 [LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_6__CLIB_ServerSide__Launch_Que_For_Threads_At_ENDS)
 
-[LESSON 7: CLIB Server-Side - OpenEpiCentre.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_7__CLIB_ServerSide__OpenEpiCentre)
+[LESSON 7: CLIB Server-Side - OpenEpiCentre. 'Theory of Deductive Reasoning'](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_7__CLIB_ServerSide__OpenEpiCentre)
 
 [LESSON 8: Java  - Simulation and Test-Benching - OpenEpiCentre.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre)
