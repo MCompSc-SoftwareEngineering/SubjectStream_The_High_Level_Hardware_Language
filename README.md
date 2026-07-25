@@ -61,7 +61,7 @@ LESSON 5: Java - A Simple Game (Pong),
 - Implements: Resource BRAVO. RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/tree/Implementations_CLIB).
 - Implements: Resource CHALRIE.
 - Implements: Resource DELTA. RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/tree/Implementations_CLIB).
-- Implementa: Resource ECHO. RESOURCE PROVIDED => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu).
+- Implements: Resource ECHO. RESOURCE PROVIDED => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu).
 
 
 ---
@@ -81,7 +81,7 @@ TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Client
 TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Server_Assembly. .UNDER DEVELOPMENT.
 - Prerequisite: SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.
   - Implements: Resource DELTA.
-  - Implementa: Resource ECHO.
+  - Implements: Resource ECHO.
   - Implements: Resource CHALRIE.
 #### Networing.
 -
@@ -99,7 +99,7 @@ TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Design_Suite).
     - Implements: Resource CHALRIE.  
   - Prerequisite: SUBJECT Charlie & Delta.
     - Implements: Resource DELTA.
-    - Implementa: Resource ECHO.
+    - Implements: Resource ECHO.
     - Implements: Resource CHALRIE.
 
 ---    
@@ -113,7 +113,7 @@ TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Task_Assembly)
     - Implements: Resource CHALRIE.  
   - Prerequisite: SUBJECT Charlie & Delta.
     - Implements: Resource DELTA.
-    - Implementa: Resource ECHO.
+    - Implements: Resource ECHO.
     - Implements: Resource CHALRIE.
 
 #### Hub Jewel - OpenEieCentre.
@@ -124,5 +124,5 @@ TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Task_Assembly)
     - Implements: Resource CHALRIE.  
   - Prerequisite: SUBJECT Charlie & Delta.
     - Implements: Resource DELTA.
-    - Implementa: Resource ECHO.
+    - Implements: Resource ECHO.
     - Implements: Resource CHALRIE.
