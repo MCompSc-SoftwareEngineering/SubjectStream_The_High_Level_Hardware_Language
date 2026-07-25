@@ -36,5 +36,6 @@ LESSON 5: Java - A Simple Game (Pong),
 [LESSON 8: Java  - Simulation and Test-Benching - OpenEpiCentre.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre)
 - Implements: Resource ALPHA.
 - Implements: Resource BRAVO.
+- Implements: Resource CHALRIE.
 - Implements: Resource DELTA.
 - Implementa: Resource ECHO.
