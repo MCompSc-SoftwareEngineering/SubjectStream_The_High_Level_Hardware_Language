@@ -58,6 +58,9 @@ LESSON 5: Java - A Simple Game (Pong),
   - Implements: Resource CHALRIE.
          
 ## SUBJECT Giga: Silicon Life Forms.
+### Training Suite.
+
+### Application Implementaion.
 - Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
   - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
     - Implements: Resource ALPHA.
