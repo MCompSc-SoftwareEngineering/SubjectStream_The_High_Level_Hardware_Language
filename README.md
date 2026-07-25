@@ -10,13 +10,13 @@
 
 ---
 [LESSON 1: C++ - Introduction to the Dynamic Link Library (DLL). ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library).
-
-RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
-
 ### - Resource ALPHA.
 
 ---
 [LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers).
+
+RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
+
 ### - Resource BRAVO.
  - Implements: Resource ALPHA. 
 
