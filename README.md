@@ -53,12 +53,17 @@ LESSON 5: Java - A Simple Game (Pong),
   - Implements: Resource ALPHA.
   - Implements: Resource BRAVO.
   - Implements: Resource CHALRIE
+#### Networing.
+-
+
 ### Server Assembly.
 - Prerequisite: SUBJECT Charlie & Delta.
   - Implements: Resource DELTA.
   - Implementa: Resource ECHO.
   - Implements: Resource CHALRIE.
-         
+#### Networing.
+-
+
 ## SUBJECT Giga: Silicon Life Forms.
 ### Training Suite.
 
