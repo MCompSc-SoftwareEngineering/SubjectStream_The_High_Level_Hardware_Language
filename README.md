@@ -7,7 +7,7 @@
  - Introduction.
    
 [LESSON 1: C++ - Introduction to the Dynamic Link Library (DLL). ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library)
-### - Resource ALPHA: C++, Java - Introduction To High Level Hardware Language
+### - Resource ALPHA.
    
 [LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers)
 ### - Resource BRAVO.
@@ -25,7 +25,7 @@ LESSON 5: Java - A Simple Game (Pong),
 
 
 ## [SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing)
-- Prerequisite: SUBJECT Alpha.
+- Prerequisite: SUBJECT Alpha: C++, Java - Introduction To High Level Hardware Language.
   
 [LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_6__CLIB_ServerSide__Launch_Que_For_Threads_At_ENDS)
 ### - Resource DELTA.
