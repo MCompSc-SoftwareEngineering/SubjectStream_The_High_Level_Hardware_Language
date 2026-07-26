@@ -11,11 +11,11 @@ public class MenuMain extends JFrame {
     private JPanel manuMain_panelLeft;
     private JPanel manuMain_panelRight;
     private JPanel manuMain_panelCentre;
-    private JPanel manuMain_panelCentre_image__xbox_controller;
-    private JPanel manuMain_panelCentre_image__xbox_controller__A;
-    private JPanel manuMain_panelCentre_image__xbox_controller__B;
-    private JPanel manuMain_panelCentre_image__xbox_controller__X;
-    private JPanel manuMain_panelCentre_image__xbox_controller__Y;
+    private BackgroundControllerTest manuMain_panelCentre_image__xbox_controller;
+    private BackgroundControllerTest manuMain_panelCentre_image__xbox_controller__A;
+    private BackgroundControllerTest manuMain_panelCentre_image__xbox_controller__B;
+    private BackgroundControllerTest manuMain_panelCentre_image__xbox_controller__X;
+    private BackgroundControllerTest manuMain_panelCentre_image__xbox_controller__Y;
     private JLayeredPane manuMain_panelCentre__layeredPane;
     private static JTextArea manuMain_panelCentre__outputTextArea;
     private JScrollPane manuMain_panelCentre__outputTextArea__scrollPane;
@@ -29,16 +29,14 @@ public class MenuMain extends JFrame {
     public void createAndShowGUI_MenuMain(Framework obj)
     {
         WriteQue_Simulation_OutputSamples.app_FUNCT_write_Start(1);
-
-        setTitle("");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setTitle("");
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         int screenWidth = 1920;
         int screenHeight = 1080;
-        setSize(screenWidth,screenHeight);
-        setLayout(new BorderLayout(4,4 ));
-        setLocationRelativeTo(null);
-        setVisible(true);
-
+        this.setSize(screenWidth,screenHeight);
+        this.setLayout(new BorderLayout(4,4 ));
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
         manuMain_panelTop = new JPanel();
         manuMain_panelBottom= new JPanel();
         manuMain_panelLeft = new JPanel();
@@ -54,35 +52,30 @@ public class MenuMain extends JFrame {
         manuMain_panelCentre_image__xbox_controller__X.setBounds(0, 0, screenWidth - 200, screenHeight - 100);
         manuMain_panelCentre_image__xbox_controller__Y = new BackgroundControllerTest("resources/xbox_controller__Y.png");
         manuMain_panelCentre_image__xbox_controller__Y.setBounds(0, 0, screenWidth - 200, screenHeight - 100);
-
         manuMain_panelCentre__layeredPane = new JLayeredPane();
-        //manuMain_panelCentre__layeredPane.add(manuMain_panelCentre_image__xbox_controller, JLayeredPane.DEFAULT_LAYER, 0);
+        manuMain_panelCentre__layeredPane.add(manuMain_panelCentre_image__xbox_controller, JLayeredPane.DEFAULT_LAYER, 0);
         manuMain_panelCentre__layeredPane.add(manuMain_panelCentre_image__xbox_controller__A, JLayeredPane.DEFAULT_LAYER, 1);
         manuMain_panelCentre__layeredPane.add(manuMain_panelCentre_image__xbox_controller__B, JLayeredPane.DEFAULT_LAYER, 2);
         manuMain_panelCentre__layeredPane.add(manuMain_panelCentre_image__xbox_controller__X, JLayeredPane.DEFAULT_LAYER, 3);
         manuMain_panelCentre__layeredPane.add(manuMain_panelCentre_image__xbox_controller__Y, JLayeredPane.DEFAULT_LAYER, -1);
-        manuMain_panelCentre__layeredPane.setVisible(true);
+        manuMain_panelCentre.add(manuMain_panelCentre__layeredPane, BorderLayout.CENTER);
         //manuMain_panelCentre__outputTextArea = new JTextArea();
         //manuMain_panelCentre__outputTextArea__scrollPane = new JScrollPane(manuMain_panelCentre__outputTextArea);
-
         manuMain_panelTop.setBackground(Color.red);
         manuMain_panelBottom.setBackground(Color.green);
         manuMain_panelLeft.setBackground(Color.yellow);
         manuMain_panelRight.setBackground(Color.magenta);
         manuMain_panelCentre.setBackground(Color.blue);
-
         manuMain_panelTop.setPreferredSize(new Dimension(100,50));
         manuMain_panelBottom.setPreferredSize(new Dimension(100,50));
         manuMain_panelLeft.setPreferredSize(new Dimension(100,100));
         manuMain_panelRight.setPreferredSize(new Dimension(100,100));
-
-        add(manuMain_panelTop, BorderLayout.NORTH);
-        add(manuMain_panelBottom, BorderLayout.SOUTH);
-        add(manuMain_panelLeft, BorderLayout.WEST);
-        add(manuMain_panelRight, BorderLayout.EAST);
-        add(manuMain_panelCentre, BorderLayout.CENTER);
-        manuMain_panelCentre.add(manuMain_panelCentre__layeredPane, BorderLayout.CENTER);//or use manuMain_panelCentre__outputTextArea__scrollPane for scroll console.
-
+        this.add(manuMain_panelTop, BorderLayout.NORTH);
+        this.add(manuMain_panelBottom, BorderLayout.SOUTH);
+        this.add(manuMain_panelLeft, BorderLayout.WEST);
+        this.add(manuMain_panelRight, BorderLayout.EAST);
+        this.add(manuMain_panelCentre, BorderLayout.CENTER);
+        this.pack();
         WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(1);
     }
 
