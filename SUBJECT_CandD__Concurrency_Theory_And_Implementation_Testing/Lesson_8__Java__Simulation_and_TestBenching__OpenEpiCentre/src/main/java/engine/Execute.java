@@ -147,9 +147,6 @@ public class Execute
         System.out.printf("entered *** Launch Threads ***.%n");
         for (int threadId = 0; threadId < _stat_REG_List_Of_Threads.length; threadId++)
         {
-            if(threadId == 1) {
-                _stat_REG_List_Of_Threads[1].setDaemon(true);
-            }
             _stat_REG_List_Of_Threads[threadId].start();
         }
         System.out.printf("exiting *** Launch Threads ***.%n");
