@@ -55,7 +55,7 @@ TEMPLATE => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](http
 ---
 [LESSON 7: CLIB Server-Side - OpenEpiCentre.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_7__CLIB_ServerSide__OpenEpiCentre)
 
-TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu).
+TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu). .UNDER DEVELOPMENT.
 
 ### - Resource ECHO.
 - Implements: Resource ALPHA. 
