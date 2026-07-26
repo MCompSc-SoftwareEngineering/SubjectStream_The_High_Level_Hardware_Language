@@ -1,4 +1,4 @@
-# Subject Stream: The High Level Hardware Language.
+# Subject Stream: The High Level Hardware Language, and Its Implementation.
 
 ## [SUBJECT Alpha: C++, Java - Introduction To High Level Hardware Language.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems)
 
