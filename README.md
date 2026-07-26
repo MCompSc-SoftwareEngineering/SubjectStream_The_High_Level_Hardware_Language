@@ -1,5 +1,5 @@
 # MIT Teaching Aid.
-## Subject Stream: The High Level Hardware Language, and Implementation.
+## Subject Stream: The High Level Hardware Language, and Its Implementation.
 
 ---
 ---
