@@ -11,8 +11,6 @@ import structs.praise_sets.Output_praise0;
 import structs.praise_sets.Output_praise1;
 import structs.praise_sets.Output_praise2;
 import structs.praise_sets.Output_praise3;
-
-import java.util.Objects;
 import java.util.Scanner;
 public class Simulation
 {
@@ -170,45 +168,41 @@ public class Simulation
     public void sim_Get_Praise_Event_Id_And_Data(Input input) {
         WriteQue_SimulationIO.app_FUNCT_write_End(1);
         _stat_REG_scanner = new Scanner(System.in);
+        while(_stat_REG_scanner == null) {
+
+        }
         int praiseEventId = 0;
         System.out.printf("Enter PraiseEventId: ");
-        if (_stat_REG_scanner.hasNext()) {
-            praiseEventId = _stat_REG_scanner.nextInt(); // Program waits here
-            input.dyn_REG_set_Input_praiseId(praiseEventId);
-            input.dyn_REG_set_InputSubset(obj, praiseEventId);
-        }
-        switch(input.dyn_REG_get_Input_praiseId())
-        {
-            case (int)0:
-                Input_praise0 input_subset0 = (Input_praise0)input.dyn_REG_get_InputSubset();
+        praiseEventId = _stat_REG_scanner.nextInt(); // Program waits here
+        input.dyn_REG_set_Input_praiseId(praiseEventId);
+        input.dyn_REG_set_InputSubset(obj, praiseEventId);
+        switch (input.dyn_REG_get_Input_praiseId()) {
+            case (int) 0:
+                Input_praise0 input_subset0 = (Input_praise0) input.dyn_REG_get_InputSubset();
                 System.out.printf("Enter _stat_REG_scanner Subset0 valueA: ");
-                if (_stat_REG_scanner.hasNext()) {
-                    input_subset0.dyn_REG_set_input_praise0_valueA(_stat_REG_scanner.nextDouble());
-                }
+                input_subset0.dyn_REG_set_input_praise0_valueA(_stat_REG_scanner.nextDouble());
                 System.out.printf("Enter _stat_REG_scanner Subset0 valueB: ");
-                if (_stat_REG_scanner.hasNext()) {
-                    input_subset0.dyn_REG_set_input_praise0_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
-                }
+                input_subset0.dyn_REG_set_input_praise0_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
                 break;
 
-            case (int)1:
-                Input_praise1 input_subset1 = (Input_praise1)input.dyn_REG_get_InputSubset();
+            case (int) 1:
+                Input_praise1 input_subset1 = (Input_praise1) input.dyn_REG_get_InputSubset();
                 System.out.printf("Enter _stat_REG_scanner Subset1 valueA: ");
                 input_subset1.dyn_REG_set_input_praise1_valueA(_stat_REG_scanner.nextDouble());
                 System.out.printf("Enter _stat_REG_scanner Subset1 valueB: ");
                 input_subset1.dyn_REG_set_input_praise1_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
                 break;
 
-            case (int)2:
-                Input_praise2 input_suber2 = (Input_praise2)input.dyn_REG_get_InputSubset();
+            case (int) 2:
+                Input_praise2 input_suber2 = (Input_praise2) input.dyn_REG_get_InputSubset();
                 System.out.printf("Enter _stat_REG_scanner Subset2 valueA: ");
                 input_suber2.dyn_REG_set_input_praise2_valueA(_stat_REG_scanner.nextDouble());
                 System.out.printf("Enter _stat_REG_scanner Subset2 valueB: ");
                 input_suber2.dyn_REG_set_input_praise2_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
                 break;
 
-            case (int)3:
-                Input_praise3 input_suber3 = (Input_praise3)input.dyn_REG_get_InputSubset();
+            case (int) 3:
+                Input_praise3 input_suber3 = (Input_praise3) input.dyn_REG_get_InputSubset();
                 System.out.printf("Enter _stat_REG_scanner Subset3 valueA: ");
                 input_suber3.dyn_REG_set_input_praise3_valueA(_stat_REG_scanner.nextDouble());
                 System.out.printf("Enter _stat_REG_scanner Subset3 valueB: ");
@@ -216,7 +210,7 @@ public class Simulation
                 break;
         }
         _stat_REG_scanner.close();
-        WriteQue_SimulationIO.app_FUNCT_write_End(1);
+       WriteQue_SimulationIO.app_FUNCT_write_End(1);
     }
     public void sim_Print_PraiseEvent(Output output) {
         obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(false);
