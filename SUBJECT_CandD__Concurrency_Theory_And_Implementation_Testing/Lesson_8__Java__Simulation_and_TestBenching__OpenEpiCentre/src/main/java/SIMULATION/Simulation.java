@@ -11,6 +11,8 @@ import structs.praise_sets.Output_praise0;
 import structs.praise_sets.Output_praise1;
 import structs.praise_sets.Output_praise2;
 import structs.praise_sets.Output_praise3;
+
+import java.util.Objects;
 import java.util.Scanner;
 public class Simulation
 {
@@ -46,6 +48,7 @@ public class Simulation
         boolean doneOnce = false;
         boolean checkPass = false;
         while(!checkPass) {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(1);
             WriteQue_ConditionCode.app_FUNCT_write_Start(1);
             if (!doneOnce)
             {
@@ -64,15 +67,18 @@ public class Simulation
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(1);
+            WriteQue_SimulationIO.app_FUNCT_write_End(1);
         }
         System.out.printf("thread " + threadId + ": Initialised Thread.%n");
         checkPass = false;
         while(!checkPass) {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(1);
             WriteQue_ConditionCode.app_FUNCT_write_Start(1);
             if (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(1);
+            WriteQue_SimulationIO.app_FUNCT_write_End(1);
         }
         System.out.printf("thread " + threadId + ": FLAG SystemInitialised() => " + obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised() + ".%n");
         System.out.printf("thread " + threadId + ": System Initialised.%n");
@@ -85,7 +91,7 @@ public class Simulation
             WriteQue_ConditionCode.app_FUNCT_write_Start(1);
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 obj.dyn_CLASS_get_SIMULATION().app_Do_Process_Of_Input(obj);
-                //obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
+                obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
             }
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
@@ -100,6 +106,7 @@ public class Simulation
         boolean doneOnce = false;
         boolean checkPass = false;
         while(!checkPass) {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(2);
             WriteQue_ConditionCode.app_FUNCT_write_Start(2);
             if (!doneOnce)
             {
@@ -118,10 +125,12 @@ public class Simulation
                 checkPass = true;
             }
             WriteQue_ConditionCode.app_FUNCT_write_End(2);
+            WriteQue_SimulationIO.app_FUNCT_write_End(2);
         }
         System.out.printf("thread " + threadId + ": Initialised Thread.%n");
         checkPass = false;
         while(!checkPass) {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(2);
             WriteQue_ConditionCode.app_FUNCT_write_Start(2);
             if (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
@@ -132,6 +141,12 @@ public class Simulation
         System.out.printf("thread " + threadId + ": System Initialised.%n");
         System.out.printf("thread " + threadId + ": System Instantiated.%n");
         System.out.printf("thread " + threadId + ": Starting THREAD.%n");
+        WriteQue_SimulationIO.app_FUNCT_write_End(2);
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         checkPass = false;
         while(!checkPass) {
             WriteQue_SimulationIO.app_FUNCT_write_Start(2);
@@ -154,18 +169,26 @@ public class Simulation
     }
     public void sim_Get_Praise_Event_Id_And_Data(Input input) {
         WriteQue_SimulationIO.app_FUNCT_write_End(1);
+        _stat_REG_scanner = new Scanner(System.in);
+        int praiseEventId = 0;
         System.out.printf("Enter PraiseEventId: ");
-        int praiseEventId = _stat_REG_scanner.nextByte(); // Program waits here
-        input.dyn_REG_set_Input_praiseId(praiseEventId);
-        input.dyn_REG_set_InputSubset(obj, praiseEventId);
+        if (_stat_REG_scanner.hasNext()) {
+            praiseEventId = _stat_REG_scanner.nextInt(); // Program waits here
+            input.dyn_REG_set_Input_praiseId(praiseEventId);
+            input.dyn_REG_set_InputSubset(obj, praiseEventId);
+        }
         switch(input.dyn_REG_get_Input_praiseId())
         {
             case (int)0:
                 Input_praise0 input_subset0 = (Input_praise0)input.dyn_REG_get_InputSubset();
                 System.out.printf("Enter _stat_REG_scanner Subset0 valueA: ");
-                input_subset0.dyn_REG_set_input_praise0_valueA(_stat_REG_scanner.nextDouble());
+                if (_stat_REG_scanner.hasNext()) {
+                    input_subset0.dyn_REG_set_input_praise0_valueA(_stat_REG_scanner.nextDouble());
+                }
                 System.out.printf("Enter _stat_REG_scanner Subset0 valueB: ");
-                input_subset0.dyn_REG_set_input_praise0_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
+                if (_stat_REG_scanner.hasNext()) {
+                    input_subset0.dyn_REG_set_input_praise0_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
+                }
                 break;
 
             case (int)1:
@@ -192,6 +215,7 @@ public class Simulation
                 input_suber3.dyn_REG_set_input_praise3_valueB(_stat_REG_scanner.nextDouble()); // Program waits here
                 break;
         }
+        _stat_REG_scanner.close();
         WriteQue_SimulationIO.app_FUNCT_write_End(1);
     }
     public void sim_Print_PraiseEvent(Output output) {
