@@ -1,7 +1,5 @@
 #include "WriteEnableForThreadsAt_STACK__Framework.h"
-#include "../include/WriteEnableForThreadsAt_STACK__App.h"
 #include "../include/WriteEnableForThreadsAt_STACK__Control.h"
-#include "../include/WriteEnableForThreadsAt_STACK__Global.h"
 #include <iostream>
 CLIBWriteQueAtSTACK::WriteEnableForThreadsAt_STACK__App* CLIBWriteQueAtSTACK::WriteEnableForThreadsAt_STACK__Framework::_stat_CLASS_get_ptr_WriteEnableForThreadsAt_STACK__App;
 CLIBWriteQueAtSTACK::WriteEnableForThreadsAt_STACK__Global* CLIBWriteQueAtSTACK::WriteEnableForThreadsAt_STACK__Framework::_stat_CLASS_ptr_WriteEnableForThreadsAt_STACK__Global;

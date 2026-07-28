@@ -1,7 +1,5 @@
-#include "../include/WriteEnableForThreadsAt_ServerInputReceive__Framework.h"
-#include "../include/WriteEnableForThreadsAt_ServerInputReceive__App.h"
+#include "../../CLIB_WriteQueForThreadsAt_ServerInputReceive/include/WriteEnableForThreadsAt_ServerInputReceive__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__Control.h"
-#include "../include/WriteEnableForThreadsAt_ServerInputReceive__Global.h"
 #include <iostream>
 CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Framework::_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App;
 CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Framework::_stat_CLASS_ptr_WriteEnableForThreadsAt_ServerInputReceive__Global;

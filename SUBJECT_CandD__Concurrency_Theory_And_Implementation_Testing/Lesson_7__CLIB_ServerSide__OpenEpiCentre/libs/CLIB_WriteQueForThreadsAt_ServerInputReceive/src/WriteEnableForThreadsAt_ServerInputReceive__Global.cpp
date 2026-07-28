@@ -1,5 +1,4 @@
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__Global.h"
-
 #include <climits>
 #include <cstdint>
 #include <cstring>
@@ -200,7 +199,7 @@ void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
 }
 void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
 {
-    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = static_cast<uint8_t>(5);
+    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = static_cast<uint8_t>(4);
 }
 std::array<bool,2>* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE()
 {

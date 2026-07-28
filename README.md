@@ -7,7 +7,7 @@
 
 ---
 [LESSON 0: Theory of Deductive Reasoning, Architechure of Silicon and Carbon Thinking.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_0__Theory_of_Deductive_Reasoning_Architechure_of_Silicon_and_Carbon_Thinking)
-- Introduction.
+ - Introduction.
 
 ---
 [LESSON 1: C++ - Introduction to the Dynamic Link Library (DLL). ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_1__Cpp__Introduction_To_Dynamic_Link_Library).
@@ -19,7 +19,7 @@
 TEMPLATE => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
 
 ### - Resource BRAVO.
-- Implements: Resource ALPHA.
+ - Implements: Resource ALPHA. 
 
 ---   
 [LESSON 3: Java - Simulation and Test-Benching - Concept of Software Integration.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration).
@@ -33,11 +33,11 @@ TEMPLATE => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
 
 ---
 [LESSON 4: Java - Deploy A Xbox Controller And GUI.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_B__Java_Integrating_Hardware/Lesson_4__Java__Deploy_A_Xbox_Controller_And_GUI)
-- Implemets: Resource CHALRIE.
+ - Implemets: Resource CHALRIE.
 
 ---
 LESSON 5: Java - A Simple Game (Pong),
-- Implemets: Resource CHALRIE.
+ - Implemets: Resource CHALRIE.
 
 ---
 ---
@@ -58,7 +58,7 @@ TEMPLATE => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](http
 TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu). .UNDER DEVELOPMENT.
 
 ### - Resource ECHO.
-- Implements: Resource ALPHA.
+- Implements: Resource ALPHA. 
 - Implements: Resource BRAVO. RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/tree/Implementations_CLIB).
 - Implements: Resource DELTA. RESOURCE PROVIDED => (https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/tree/Implementations_CLIB).
 
@@ -78,18 +78,18 @@ TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu). .UNDER D
 ### Client Assembly.
 TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Client_Assembly. .UNDER DEVELOPMENT.
 - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
-    - Implements: Resource ALPHA.
-    - Implements: Resource BRAVO.
-    - Implements: Resource CHALRIE
+  - Implements: Resource ALPHA.
+  - Implements: Resource BRAVO.
+  - Implements: Resource CHALRIE
 #### Networing.
 -
 
 ### Server Assembly.
 TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Server_Assembly. .UNDER DEVELOPMENT.
 - Prerequisite: SUBJECT Charlie & Delta: Concurrrency Theory and Implementation.
-    - Implements: Resource DELTA.
-    - Implements: Resource ECHO.
-    - Implements: Resource CHALRIE.
+  - Implements: Resource DELTA.
+  - Implements: Resource ECHO.
+  - Implements: Resource CHALRIE.
 #### Networing.
 -
 
@@ -100,36 +100,36 @@ TEMPLATE => https://github.com/OpenAvril/OpenCFSD_Java_Assembly/tree/main/Server
 ### Training Suite.
 TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Design_Suite). .UNDER DEVELOPMENT.
 - Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
-    - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
-        - Implements: Resource ALPHA.
-        - Implements: Resource BRAVO.
-        - Implements: Resource CHALRIE.
-    - Prerequisite: SUBJECT Charlie & Delta.
-        - Implements: Resource DELTA.
-        - Implements: Resource ECHO.
-        - Implements: Resource CHALRIE.
+  - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
+    - Implements: Resource ALPHA.
+    - Implements: Resource BRAVO.
+    - Implements: Resource CHALRIE.  
+  - Prerequisite: SUBJECT Charlie & Delta.
+    - Implements: Resource DELTA.
+    - Implements: Resource ECHO.
+    - Implements: Resource CHALRIE.
 
 ---    
 ### Application Implementaion.
 TEMPLATE => (https://github.com/OpenAvril/OpenNNI_Avril/tree/main/Task_Assembly). .UNDER DEVELOPMENT.
 #### Independent Jewel.
 - Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
-    - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
-        - Implements: Resource ALPHA.
-        - Implements: Resource BRAVO.
-        - Implements: Resource CHALRIE.
-    - Prerequisite: SUBJECT Charlie & Delta.
-        - Implements: Resource DELTA.
-        - Implements: Resource ECHO.
-        - Implements: Resource CHALRIE.
+  - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
+    - Implements: Resource ALPHA.
+    - Implements: Resource BRAVO.
+    - Implements: Resource CHALRIE.  
+  - Prerequisite: SUBJECT Charlie & Delta.
+    - Implements: Resource DELTA.
+    - Implements: Resource ECHO.
+    - Implements: Resource CHALRIE.
 
 #### Hub Jewel - OpenEieCentre.
 - Prerequisite: SUBJECT Foxtrot: Concurrrency Full Stack Development.
-    - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
-        - Implements: Resource ALPHA.
-        - Implements: Resource BRAVO.
-        - Implements: Resource CHALRIE.
-    - Prerequisite: SUBJECT Charlie & Delta.
-        - Implements: Resource DELTA.
-        - Implements: Resource ECHO.
-        - Implements: Resource CHALRIE.
+  - Prerequisite: SUBJECT Bravo: Java - Integrating Hardware.
+    - Implements: Resource ALPHA.
+    - Implements: Resource BRAVO.
+    - Implements: Resource CHALRIE.  
+  - Prerequisite: SUBJECT Charlie & Delta.
+    - Implements: Resource DELTA.
+    - Implements: Resource ECHO.
+    - Implements: Resource CHALRIE.

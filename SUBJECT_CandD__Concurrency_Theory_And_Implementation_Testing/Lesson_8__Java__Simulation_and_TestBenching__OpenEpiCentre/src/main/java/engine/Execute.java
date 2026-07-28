@@ -1,5 +1,6 @@
 package engine;
 import SIMULATION.Simulation;
+import threads.IO_ListenRespond;
 import com.sun.jna.Pointer;
 import io.*;
 
@@ -195,10 +196,10 @@ public class Execute
             obj.dyn_STRUCT_get_IO_ListenRespond().dyn_App_Thread_IO_Listen_Respond(obj, (byte)0);
         });
         _stat_REG_List_Of_Threads[1] = new Thread(() -> {
-            Simulation.Thread_Input_Peripheral_Scanner(obj, (byte)1);
+            obj.dyn_CLASS_get_SIMULATION().Thread_Input_Peripheral_Scanner(obj, (byte)1);
         });
         _stat_REG_List_Of_Threads[2] = new Thread(() -> {
-            Simulation.Thread_Output_Draw(obj, (byte)2);
+            obj.dyn_CLASS_get_SIMULATION().Thread_Output_Draw(obj, (byte)2);
         });
         System.out.printf("exiting Execute stat_REG_boot3_INITIALISE_List_Of_Threads().%n");
     }
