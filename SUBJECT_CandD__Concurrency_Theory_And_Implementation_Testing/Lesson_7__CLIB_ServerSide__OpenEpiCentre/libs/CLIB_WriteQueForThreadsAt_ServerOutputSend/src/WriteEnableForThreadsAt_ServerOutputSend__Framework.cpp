@@ -1,7 +1,5 @@
-#include "../include/WriteEnableForThreadsAt_ServerOutputSend__Framework.h"
-#include "../include/WriteEnableForThreadsAt_ServerOutputSend__App.h"
+#include "../../CLIB_WriteQueForThreadsAt_ServerOutputSend/include/WriteEnableForThreadsAt_ServerOutputSend__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend__Control.h"
-#include "../include/WriteEnableForThreadsAt_ServerOutputSend__Global.h"
 #include <iostream>
 CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__App* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Framework::_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App;
 CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Framework::_stat_CLASS_ptr_WriteEnableForThreadsAt_ServerOutputSend__Global;

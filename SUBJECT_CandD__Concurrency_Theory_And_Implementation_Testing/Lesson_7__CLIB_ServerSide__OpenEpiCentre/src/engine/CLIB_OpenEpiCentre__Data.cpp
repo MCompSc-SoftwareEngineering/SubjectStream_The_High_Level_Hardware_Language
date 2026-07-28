@@ -1,6 +1,9 @@
-#include "../../include/engine/CLIB_OpenEpiCentre__Data.h"
 #include "../../include/engine/CLIB_OpenEpiCentre__App.h"
+#include "../../include/engine/CLIB_OpenEpiCentre__Data.h"
+#include "../../include/engine/CLIB_OpenEpiCentre__Data__Control.h"
+#include "../../include/engine/CLIB_OpenEpiCentre__Framework.h"
 #include "../../include/engine/CLIB_OpenEpiCentre__Global.h"
+#include <array>
 #include <iostream>
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::_stat_CLASS_ptr_CLIB_OpenEpiCentre__Data__Control;
     std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::_stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
@@ -302,27 +305,27 @@
         *_stat_REG_ptr_vector_Of_stack_Of_OutputPraise = { objOutput };
         std::cout << "exiting stat_REG_boot3_INITIALISE_stack_Of_OutputPraise()" << std::endl;
     }
-    std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_Array_Of_buffer_Input_ReferenceForThread()
+    std::array<class CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_Array_Of_buffer_Input_ReferenceForThread()
 {
     return _stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;
 }
-    std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_array_Of_buffer_Output_ReferenceForThread()
+    std::array<class CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_array_Of_buffer_Output_ReferenceForThread()
     {
         return _stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;
     }
-    std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*, 2>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_get_REG_ptr_array_Of_doubleBuffer_Input()
+    std::array<class CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*, 2>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_get_REG_ptr_array_Of_doubleBuffer_Input()
     {
         return _stat_REG_ptr_array_Of_doubleBuffer_Input;
     }
-    std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output*, 2>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_get_REG_ptr_array_Of_doubleBuffer_Output()
+    std::array<class CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output*, 2>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_get_REG_ptr_array_Of_doubleBuffer_Output()
     {
         return _stat_REG_ptr_array_Of_doubleBuffer_Output;
     }
-    std::vector<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_vector_Of_stack_Of_InputPraise()
+    std::vector<class CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_vector_Of_stack_Of_InputPraise()
     {
         return _stat_REG_ptr_vector_Of_stack_Of_InputPraise;
     }
-    std::vector<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_vector_Of_stack_Of_OutputPraise()
+    std::vector<class CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::stat_REG_get_ptr_vector_Of_stack_Of_OutputPraise()
     {
         return _stat_REG_ptr_vector_Of_stack_Of_OutputPraise;
     }

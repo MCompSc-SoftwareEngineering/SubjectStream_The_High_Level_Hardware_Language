@@ -1,6 +1,5 @@
 #ifndef CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
 #define CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
-#include "../include/engine/CLIB_OpenEpiCentre__Framework.h"
 extern "C"
 {
 	namespace CLIBOpenEpiCentre
@@ -38,7 +37,7 @@ extern "C"
 			static void CLIBConcurrentServerIO__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_CLASS_boot1_DEFINE_Framework();
 			static void CLIBConcurrentServerIO__stat_CLASS_boot3_INITIALISE_Framework();
-			static CLIB_OpenEpiCentre__Framework* CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework();
+			static class CLIB_OpenEpiCentre__Framework* CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework();
 			static void CLIBConcurrentServerIO__stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();

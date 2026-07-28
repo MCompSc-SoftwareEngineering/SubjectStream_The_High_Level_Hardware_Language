@@ -1,6 +1,6 @@
 #ifndef TESTBENCH_CLIB_OPENEPICENTRE__FRAMEWORK_H
 #define TESTBENCH_CLIB_OPENEPICENTRE__FRAMEWORK_H
-#include "CLIB_OpenEpiCentre__App.h"
+#include "../engine/CLIB_OpenEpiCentre__App.h"
 #include "CLIB_OpenEpiCentre__Global.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Concurrent.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
