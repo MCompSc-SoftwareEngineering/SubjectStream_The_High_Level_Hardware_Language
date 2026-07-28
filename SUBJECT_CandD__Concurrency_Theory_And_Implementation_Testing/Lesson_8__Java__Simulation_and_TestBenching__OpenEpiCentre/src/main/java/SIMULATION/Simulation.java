@@ -166,7 +166,6 @@ public class Simulation
         _stat_REG_scanner.close();
     }
     public void sim_Get_Praise_Event_Id_And_Data(Input input) {
-        WriteQue_SimulationIO.app_FUNCT_write_End(1);
         _stat_REG_scanner = new Scanner(System.in);
         while(_stat_REG_scanner == null) {
 
@@ -210,7 +209,6 @@ public class Simulation
                 break;
         }
         _stat_REG_scanner.close();
-       WriteQue_SimulationIO.app_FUNCT_write_End(1);
     }
     public void sim_Print_PraiseEvent(Output output) {
         obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(false);
@@ -239,20 +237,17 @@ public class Simulation
         }
     }
     public void app_Do_Process_Of_Input(Framework obj) {
-        WriteQue_Simulation_InputSamples.app_FUNCT_write_Start(0);
         obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewInputReady(false);
         _SIM_stat_REG_input_Sample = obj.dyn_STRUCT_get_Input();
         obj.dyn_CLASS_get_SIMULATION().sim_Get_Praise_Event_Id_And_Data(_SIM_stat_REG_input_Sample);//SIMULATION
-        WriteQue_Simulation_InputSamples.app_FUNCT_write_End(0);
+
     }
     public void app_Do_Process_Of_Output(Framework obj) {
-        WriteQue_Simulation_OutputSamples.app_FUNCT_write_Start(0);
         _SIM_stat_REG_output_Sample = obj.dyn_STRUCT_get_Output();
         if(obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_get_flag__isNewOutputReady()) {
             obj.dyn_CLASS_get_SIMULATION().sim_Print_PraiseEvent(_SIM_stat_REG_output_Sample);
             obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
         }
-        WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(0);
     }
     public void dyn_REG_boot1_DEFINE__SIMULATION() {
         stat_REG_boot1_DEFINE__SIMULATION();
