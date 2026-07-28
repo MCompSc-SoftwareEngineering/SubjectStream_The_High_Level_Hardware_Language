@@ -1,8 +1,8 @@
 #ifndef CLIB_WRITEENABLEFORTHREADSAT_STACK_WRITEENABLEFORTHREADSAT_STACK__FRAMEWORK_H
 #define CLIB_WRITEENABLEFORTHREADSAT_STACK_WRITEENABLEFORTHREADSAT_STACK__FRAMEWORK_H
-#include "WriteEnableForThreadsAt_STACK__App.h"
-#include "WriteEnableForThreadsAt_STACK__Global.h"
-#include "WriteEnableForThreadsAt_STACK__Framework.h"
+#include "../include/WriteEnableForThreadsAt_STACK__App.h"
+#include "../include/WriteEnableForThreadsAt_STACK__Global.h"
+#include "../include/WriteEnableForThreadsAt_STACK__Framework.h"
 namespace CLIBWriteQueAtSTACK
 {
     class WriteEnableForThreadsAt_STACK__Framework
