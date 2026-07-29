@@ -21,39 +21,41 @@ public class IO_ListenRespond
         stat_REG_boot0_DECLAIRE_IO_ListenRespond();
     }
     public void dyn_App_Thread_IO_Listen_Respond(Framework obj, byte threadId) {
+        WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
         System.out.printf("thread " + threadId + ": Enter THREAD member function on thread.%n");
+        WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
         boolean doneOnce = false;
         boolean checkPass = false;
         while(!checkPass) {
-            WriteQue_SimulationIO.app_FUNCT_write_Start(0);
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
-            if(!doneOnce)
-            {
+            WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
+            if (!doneOnce) {
                 obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_set_Item_On_List_Of_Flag_ThreadInitialised(threadId, true);
                 System.out.printf("thread " + threadId + ": isThreadInitialised => " + obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(threadId) + ".%n");
                 doneOnce = true;
             }
             boolean temp = true;
-            for(byte index = 0; index < 3; index++) {
-                if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(index)) {
+            for (byte index = 0; index < 3; index++) {
+                if (!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(index)) {
                     temp = false;
                 }
             }
             obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_set_Flag_is_SystemInitialised(temp);
-            if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
+            if (obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
+            WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
             WriteQue_ConditionCode.app_FUNCT_write_End(0);
-            WriteQue_SimulationIO.app_FUNCT_write_End(0);
         }
+        WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
         System.out.printf("thread " + threadId + ": Initialised Thread.%n");
+        WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
         checkPass = false;
         boolean temp = true;
         while(!checkPass) {
-            WriteQue_SimulationIO.app_FUNCT_write_Start(0);
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
+            WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                WriteQue_ConditionCode.app_FUNCT_write_End(0);
                 temp = true;
                 if(!WriteQue_ConditionCode.app_FUNCT_get_flag_isPGM_INSTNATIATED()) {
                     temp = false;
@@ -80,26 +82,23 @@ public class IO_ListenRespond
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
+            WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
             WriteQue_ConditionCode.app_FUNCT_write_End(0);
-            WriteQue_SimulationIO.app_FUNCT_write_End(0);
+
         }
+        WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
         System.out.printf("thread " + threadId + ": FLAG SystemInitialised() => " + obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised() + ".%n");
         System.out.printf("thread " + threadId + ": System Initialised.%n");
         System.out.printf("thread " + threadId + ": System Instantiated.%n");
         System.out.printf("thread " + threadId + ": Starting THREAD.%n");
+        WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
         checkPass = false;
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
         while(!checkPass) {
-            WriteQue_SimulationIO.app_FUNCT_write_Start(0);
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
+            WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 System.out.printf("thread " + threadId + " INPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
                 if (stat_REG_get_flag__isNewInputReady()) {
-                    WriteQue_ConditionCode.app_FUNCT_write_End(0);
                     //stat_App_Decode_NetworkingSteam_At_Server_Input_Recieve(obj, _SIM_stat_REG_input_Sample, stat_REG_get_Buffer__Input());
                     OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(_SIM_stat_REG_input_Sample.dyn_REG_get_Input_praiseId());
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(_SIM_stat_REG_input_Sample.dyn_REG_get_Input_praiseId());
@@ -132,17 +131,15 @@ public class IO_ListenRespond
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input();
                 }
-                else {
-                    WriteQue_ConditionCode.app_FUNCT_write_End(0);
-                }
                 System.out.printf("thread " + threadId + " INPUT: CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
-                WriteQue_SimulationIO.app_FUNCT_write_End(0);
+                WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
+                WriteQue_ConditionCode.app_FUNCT_write_End(0);
 
-                WriteQue_SimulationIO.app_FUNCT_write_Start(0);
-                System.out.printf("thread " + threadId + " OUTPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
                 WriteQue_ConditionCode.app_FUNCT_write_Start(0);
+                WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
+                System.out.printf("thread " + threadId + " OUTPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
                 if (OpenEpiCentre.CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend()) {
-                    WriteQue_ConditionCode.app_FUNCT_write_End(0);
+//                    WriteQue_ConditionCode.app_FUNCT_write_End(0);
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
                     _SIM_stat_REG_output_Sample.dyn_REG_set_Output_praiseId(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId());
                     _SIM_stat_REG_output_Sample.dyn_REG_set_OutputSubset(obj, OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId());
@@ -170,17 +167,13 @@ public class IO_ListenRespond
                     }
                     //stat_App_Encode_NetworkingSteam_At_Server_Output_Send(obj, _SIM_stat_REG_output_Sample, stat_REG_get_Buffer__Ouput());
                 }
-                else {
-                    WriteQue_ConditionCode.app_FUNCT_write_End(0);
-                }
             }
-            WriteQue_ConditionCode.app_FUNCT_write_Start(0);
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
-            WriteQue_ConditionCode.app_FUNCT_write_End(0);
             System.out.printf("thread " + threadId + " OUTPUT: CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
-            WriteQue_SimulationIO.app_FUNCT_write_End(0);
+            WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
+            WriteQue_ConditionCode.app_FUNCT_write_End(0);
         }
         obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().app_Terminate_All_Threads(obj);
     }
