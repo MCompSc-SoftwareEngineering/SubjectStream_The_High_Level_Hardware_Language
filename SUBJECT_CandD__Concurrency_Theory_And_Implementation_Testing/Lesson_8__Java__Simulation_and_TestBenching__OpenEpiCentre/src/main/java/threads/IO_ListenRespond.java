@@ -97,7 +97,7 @@ public class IO_ListenRespond
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
             WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
             if(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
-                System.out.printf("thread " + threadId + " INPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + "Input : OPEN ACCESS 'WriteQue_SimulationIO' @id=0.%n");
                 if (stat_REG_get_flag__isNewInputReady()) {
                     //stat_App_Decode_NetworkingSteam_At_Server_Input_Recieve(obj, _SIM_stat_REG_input_Sample, stat_REG_get_Buffer__Input());
                     OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(_SIM_stat_REG_input_Sample.dyn_REG_get_Input_praiseId());
@@ -131,13 +131,13 @@ public class IO_ListenRespond
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input();
                 }
-                System.out.printf("thread " + threadId + " INPUT: CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + "Input : OPEN ACCESS 'WriteQue_SimulationIO' @id=0.%n");
                 WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
                 WriteQue_ConditionCode.app_FUNCT_write_End(0);
 
                 WriteQue_ConditionCode.app_FUNCT_write_Start(0);
                 WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIM
-                System.out.printf("thread " + threadId + " OUTPUT: ACCESS WriteQue_SimulationIO at Id=0.%n");
+                System.out.printf("thread " + threadId + "Output : OPEN ACCESS 'WriteQue_SimulationIO' @id=0.%n");
                 if (OpenEpiCentre.CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend()) {
 //                    WriteQue_ConditionCode.app_FUNCT_write_End(0);
                     OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
@@ -171,7 +171,7 @@ public class IO_ListenRespond
             if(!obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_get_Flag_is_SystemInitialised()) {
                 checkPass = true;
             }
-            System.out.printf("thread " + threadId + " OUTPUT: CLOSE ACCESS WriteQue_SimulationIO at Id=0.%n");
+            System.out.printf("thread " + threadId + "Output : OPEN ACCESS 'WriteQue_SimulationIO' @id=0.%n");
             WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIM
             WriteQue_ConditionCode.app_FUNCT_write_End(0);
         }
