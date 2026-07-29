@@ -81,7 +81,6 @@
 		else {
 			CLIB_WriteEnableForThreadsAt_STACK__stat_REG_get_CLIBLaunchQueAtSTACK_isFlagINSTANTIATED()[4] = false;
 			CLIB_WriteEnableForThreadsAt_STACK__stat_REG_get_CLIBLaunchQueAtSTACK_isFlagINSTANTIATED();
-			CLIB_WriteEnableForThreadsAt_STACK__stat_App_FUNCT_set_flag_isCurrentThreadRELEASED(true);
 		}
 	}
 	void CLIBWriteQueAtSTACK::CLIB_WriteEnableForThreadsAt_STACK::CLIB_WriteEnableForThreadsAt_STACK__App_FUNCT_write_Start(unsigned char* bytes)
