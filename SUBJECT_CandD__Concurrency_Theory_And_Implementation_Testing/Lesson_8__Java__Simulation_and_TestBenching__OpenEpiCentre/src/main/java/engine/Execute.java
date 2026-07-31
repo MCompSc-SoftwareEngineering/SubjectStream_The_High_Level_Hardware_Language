@@ -82,7 +82,7 @@ public class Execute
         WriteQue_ConditionCode.app_FUNCT_write_Start(intPrimeDEFAULT);
         System.out.printf("done CHECK member functions in WriteQue_ConditionCode.%n");
 
-        System.out.printf("entered CHECK member functions in MyDLL.%n");
+        System.out.printf("entered CHECK member functions in OpenEpiCentre.%n");
         OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
         //Pointer tempE0 = OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_generate_Program();
         boolean tempE1 = OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_get_flag_isPGM_INSTANTIATED();
@@ -109,7 +109,7 @@ public class Execute
         OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise3_Value_A(doublePRimeDEFAULT);
         OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise3_Value_B(doublePRimeDEFAULT);
         OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(intPrimeDEFAULT);
-        System.out.printf("entered CHECK member functions in MyDLL/.%n");
+        System.out.printf("entered CHECK member functions in OpenEpiCentre.%n");
 
         System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Execute().%n");
     }

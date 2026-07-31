@@ -16,7 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="950f5a76-606e-4234-8155-7e9ebdb63d43" name="Changes" comment="DEVELOPMENT_2026_07_28_1556, &lt;COMPILE&lt;SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;- update lib from open epi centre." />
+    <list default="true" id="950f5a76-606e-4234-8155-7e9ebdb63d43" name="Changes" comment="DEVELOPMENT_2026_07_29_1546, &lt;COMPILE&lt;SUCCESS&gt; &lt;RUNTIME_TEST&gt;." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,11 +29,6 @@
     <option name="debugProfileId" value="5f01767f-029e-4d8e-a3f7-dd7e11240dd3" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="currently_altering" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -72,9 +67,9 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "currently__altering",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre",
+    "last_opened_file_path": "/home/brenton-james/MCompSc_SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,7 +83,6 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_8__Java__Simulation_and_TestBenching__OpenEpiCentre/src/main/java/libs" />
       <recent name="$PROJECT_DIR$/SUBJECT_A__Computer_Systems" />
       <recent name="$PROJECT_DIR$/SUBJECT_A__Computer_Systems/Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration" />
     </key>
@@ -144,7 +138,7 @@
     <MESSAGE value="DEVELOPMENT_2026_07_21_1429, &lt;COMPILE&lt;SUCCESS&gt;.&#10;&#10;initial commit." />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;SUBJECT_A__Computer_Systems/Lesson_3__Java__Simulation_and_TestBenching__Concept_of_Software_Integration/README.md" />
     <MESSAGE value="DEVELOPMENT_2026_07_24_1311, &lt;COMPILE&lt;SUCCESS&gt;.&#10;&#10;initial commit." />
-    <MESSAGE value="DEVELOPMENT_2026_07_28_1556, &lt;COMPILE&lt;SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;- update lib from open epi centre." />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_07_28_1556, &lt;COMPILE&lt;SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;- update lib from open epi centre." />
+    <MESSAGE value="DEVELOPMENT_2026_07_29_1546, &lt;COMPILE&lt;SUCCESS&gt; &lt;RUNTIME_TEST&gt;." />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_07_29_1546, &lt;COMPILE&lt;SUCCESS&gt; &lt;RUNTIME_TEST&gt;." />
   </component>
 </project>

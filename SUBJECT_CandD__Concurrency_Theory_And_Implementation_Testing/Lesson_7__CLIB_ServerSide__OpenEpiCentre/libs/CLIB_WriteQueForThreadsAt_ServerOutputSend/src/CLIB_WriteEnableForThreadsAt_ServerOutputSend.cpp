@@ -81,7 +81,6 @@
 		else {
 			CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()[4] = false;
 			CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED();
-			CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_App_FUNCT_set_flag_isCurrentThreadRELEASED(true);
 		}
 	}
 	void CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_write_Start(unsigned char* bytes)
@@ -91,7 +90,7 @@
 		}
 		else {
 			CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()[5] = false;
-			CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED();//INSTANTIATE this member function last.
+			CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED();
 		}
 	}
 	bool CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_APP_FUNCT_Calc_IsAllINSTANTIATED() {
