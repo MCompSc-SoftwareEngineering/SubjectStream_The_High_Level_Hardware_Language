@@ -1,5 +1,5 @@
 # MIT package.
-## Discipline Elective Stream - ComputerSystems (The High Level Hardware Language).
+## Discipline Elective Stream - Computer Systems, (The High Level Hardware Language).
 
 ---
 ---
