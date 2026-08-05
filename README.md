@@ -42,7 +42,7 @@ TEMPLATE => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
 ---
  - Implemets: Resource CHALRIE.
 
-LESSON 5: Java - A Simple Game (Pong),
+LESSON 5: Java - A Simple Game (Pong with a trajectory),
 ---
 
  - Implemets: Resource CHALRIE.
