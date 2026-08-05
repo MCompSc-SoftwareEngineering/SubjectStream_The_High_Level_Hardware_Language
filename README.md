@@ -1,5 +1,6 @@
-# MIT Teaching Aid.
-## Subject Stream: The High Level Hardware Language, and Its Implementation.
+# MIT package.
+## Discipline Elective Stream - ComputerSystems (The High Level Hardware Language).
+
 ---
 ---
 
@@ -16,7 +17,7 @@
 ### - Resource ALPHA.
 
 
-[LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_A__Computer_Systems/Lesson_2__CLIB_The_DLL__Write_Que_For_Thread_At_Registers).
+[LESSON 2: C++ CLIB - The DLL - Write Que For Thread At Registers. ].
 ---
 
 TEMPLATE => (https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK).
@@ -52,7 +53,7 @@ LESSON 5: Java - A Simple Game (Pong),
 
 - Prerequisite: SUBJECT Alpha: C++, Java - Introduction To High Level Hardware Language.
 
-[LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_6__CLIB_ServerSide__Launch_Que_For_Threads_At_ENDS)
+LESSON 6: CLIB Server-Side - Launch Que For Threads At Ends.
 ---
 
 TEMPLATE => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/tree/Implementations_CLIB).
@@ -60,7 +61,7 @@ TEMPLATE => ([https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK](http
 ### - Resource DELTA.
 - Implements: Resource ALPHA.
 
-[LESSON 7: CLIB Server-Side - OpenEpiCentre.](https://github.com/MCompSc-SoftwareEngineering/SubjectStream_The_High_Level_Hardware_Language/tree/main/SUBJECT_CandD__Concurrency_Theory_And_Implementation_Testing/Lesson_7__CLIB_ServerSide__OpenEpiCentre)
+LESSON 7: CLIB Server-Side - OpenEpiCentre.
 ---
 
 TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu). .UNDER DEVELOPMENT.
@@ -80,7 +81,7 @@ TEMPLATE => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu). .UNDER D
 - Implements: Resource ECHO. RESOURCE PROVIDED => (https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu).
 
 
-## SUBJECT Foxtrot: Concurrrency Full Stack Development.
+## SUBJECT Echo: Concurrrency Full Stack Development.
 ---
 ---
 
