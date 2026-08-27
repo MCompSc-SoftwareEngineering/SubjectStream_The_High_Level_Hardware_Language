@@ -168,7 +168,7 @@ Input_praiseMAX subset_of_input_for_praiseMAX = null;
 
 case Integer.MIN_VALUE:
 
-   case Integer.MIN_VALUE:
+     case Integer.MIN_VALUE:
    
 line 293:
 ````
