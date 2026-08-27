@@ -1,5 +1,10 @@
 # Implementing a new praise.
+
+----
+----
 ## OpenAvrilCFSD.
+
+----
 ### Server_Assembly.
  * Create three new classes as a praise set in folder root:'src/main/java/structs/praise_sets'.
    - Input_praiseMAX.java
@@ -79,4 +84,5 @@ public class Input_praiseMAX {
 ````
 ````
 
+----
 ### Client_Assembly.
