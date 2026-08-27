@@ -1,6 +1,6 @@
 # Implementing a new praise.
 ## Server Assembly.
- * Create three new classes as praise set in folder root:'src/main/java/structs/praise_sets'.
+ * Create three new classes as a praise set in folder root:'src/main/java/structs/praise_sets'.
    - Input_praiseMAX.java
    - Algorithm_praiseMAX.java
    - Output_praiseMAX.java
