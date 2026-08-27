@@ -166,15 +166,19 @@ line 162:
 Input_praiseMAX subset_of_input_for_praiseMAX = null;
 ````
 
-case Integer.MIN_VALUE:
-
-     case Integer.MIN_VALUE:
-   
 line 293:
 ````
-subset_of_input_for_praiseMAX = (Input_praiseMAX)_stat_REG_Buffer_For_Input.dyn_REG_get_InputSubset();
+switch (thread_Listen_switch_A[0]) {
+   case Integer.MIN_VALUE: {
+         switch (thread_Listen_switch_A[1]) {
+            case Integer.MIN_VALUE: {
+               subset_of_input_for_praiseMAX = (Input_praiseMAX)_stat_REG_Buffer_For_Input.dyn_REG_get_InputSubset();
+            }
+         }
+      }
+   }
+}   
 ````
-
 
 ----
 ### Client_Assembly.
