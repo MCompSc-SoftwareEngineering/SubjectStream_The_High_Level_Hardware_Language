@@ -4,7 +4,7 @@ import io.*;
 
 import javax.swing.*;
 import menu.MenuMain;
-import threads.EventListener_XBoxController;
+
 public class Execute
 {
     private static Execute_Control _stat_CLASS_Execute_Control;
@@ -56,18 +56,18 @@ public class Execute
 
         System.out.printf("entered CHECK member function WriteQue_InputPerihperalSamples().%n");
         //WriteQue_Simulation_InputSamples.app_FUNCT_generate_Program();
-        Boolean tempA0 = WriteQue_Simulation_InputSamples.app_FUNCT_get_flag_isPGM_INSTNATIATED();
-        WriteQue_Simulation_InputSamples.app_FUNCT_terminate_Program();
-        WriteQue_Simulation_InputSamples.app_FUNCT_write_End(intPrimeDEFAULT);
-        WriteQue_Simulation_InputSamples.app_FUNCT_write_Start(intPrimeDEFAULT);
+        Boolean tempA0 = WriteQue_ClientUserInput.app_FUNCT_get_flag_isPGM_INSTNATIATED();
+        WriteQue_ClientUserInput.app_FUNCT_terminate_Program();
+        WriteQue_ClientUserInput.app_FUNCT_write_End(intPrimeDEFAULT);
+        WriteQue_ClientUserInput.app_FUNCT_write_Start(intPrimeDEFAULT);
         System.out.printf("done CHECK member function WriteQue_InputPerihperalSamples().%n");
 
         System.out.printf("entered CHECK member function WriteQue_OutputGameInstanaceData().%n");
         //WriteQue_Simulation_OutputSamples.app_FUNCT_generate_Program();
-        Boolean tempB0 = WriteQue_Simulation_OutputSamples.app_FUNCT_get_flag_isPGM_INSTNATIATED();
-        WriteQue_Simulation_OutputSamples.app_FUNCT_terminate_Program();
-        WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(intPrimeDEFAULT);
-        WriteQue_Simulation_OutputSamples.app_FUNCT_write_Start(intPrimeDEFAULT);
+        Boolean tempB0 = WriteQue_ClientUserOutput.app_FUNCT_get_flag_isPGM_INSTNATIATED();
+        WriteQue_ClientUserOutput.app_FUNCT_terminate_Program();
+        WriteQue_ClientUserOutput.app_FUNCT_write_End(intPrimeDEFAULT);
+        WriteQue_ClientUserOutput.app_FUNCT_write_Start(intPrimeDEFAULT);
         System.out.printf("done CHECK member function WriteQue_OutputGameInstanaceData().%n");
 
         System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Execute().%n");
@@ -181,12 +181,12 @@ public class Execute
     }
     private static void stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_InputPerihperalSamples() {
         System.out.printf("entered stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_InputPerihperalSamples().%n");
-        _stat_PGM_WriteQueForThreadsAt_InputSamples = WriteQue_Simulation_InputSamples.app_FUNCT_generate_Program();
+        _stat_PGM_WriteQueForThreadsAt_InputSamples = WriteQue_ClientUserInput.app_FUNCT_generate_Program();
         System.out.printf("exiting stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_InputPerihperalSamples().%n");
     }
     private static void stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_OutputGameInstanaceData() {
         System.out.printf("entered Execute stat_PGM_boot1_DEFINE_WriteQueForThreadsAt_OutputGameInstanaceData().%n");
-        _stat_PGM_WriteQueForThreadsAt_OutputSamples = WriteQue_Simulation_OutputSamples.app_FUNCT_generate_Program();
+        _stat_PGM_WriteQueForThreadsAt_OutputSamples = WriteQue_ClientUserOutput.app_FUNCT_generate_Program();
         System.out.printf("exiting Execute stat_PGM_boot1_DEFINE_WriteQueForThreadsAt_OutputGameInstanaceData().%n");
     }
     private static Pointer stat_PGM_get_WriteQueForThreadsAt_InputSamples() {

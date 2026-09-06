@@ -1,15 +1,14 @@
 package io;
-
 import com.sun.jna.Pointer;
 import engine.Global;
-import libs.JavaWriteQue_ConditionCode;
+import libs.JavaLIB_WriteQueForThreadsAt_ClientUserInput;
 
-public class WriteQue_ConditionCode {
-
+public class WriteQue_ClientUserInput
+{
     public static Pointer app_FUNCT_generate_Program()
     {
         try {
-            return JavaWriteQue_ConditionCode.INSTANCE.CLIB_WriteEnableForThreadsAt_ConditionCode__App_FUNCT_generate_Program();
+            return JavaLIB_WriteQueForThreadsAt_ClientUserInput.INSTANCE.CLIB_WriteEnableForThreadsAt_ClientUserInput__App_FUNCT_generate_Program();
         }
         catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError.%n");
@@ -25,7 +24,7 @@ public class WriteQue_ConditionCode {
     public static Boolean app_FUNCT_get_flag_isPGM_INSTNATIATED()
     {
         try {
-            return Global.stat_CONVERT_LsbByteArray_To_LsbBoolean(JavaWriteQue_ConditionCode.INSTANCE.CLIB_WriteEnableForThreadsAt_ConditionCode_InputSamples__App_FUNCT_get_flag_isPGM_INSTANTIATED());
+            return Global.stat_CONVERT_LsbByteArray_To_LsbBoolean(JavaLIB_WriteQueForThreadsAt_ClientUserInput.INSTANCE.CLIB_WriteEnableForThreadsAt_ClientUserInput__App_FUNCT_get_FLAG_isPGM_INSTANTIATED());
         }
         catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError.%n");
@@ -41,7 +40,7 @@ public class WriteQue_ConditionCode {
     public static void app_FUNCT_terminate_Program()
     {
         try {
-            JavaWriteQue_ConditionCode.INSTANCE.CLIB_WriteEnableForThreadsAt_ConditionCode_InputSamples__App_FUNCT_terminate_Program();
+            JavaLIB_WriteQueForThreadsAt_ClientUserInput.INSTANCE.CLIB_WriteEnableForThreadsAt_ClientUserInput__App_FUNCT_terminate_Program();
         }
         catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError.%n");
@@ -56,7 +55,7 @@ public class WriteQue_ConditionCode {
     public static void app_FUNCT_write_End(int threadId)
     {
         try {
-            JavaWriteQue_ConditionCode.INSTANCE.CLIB_WriteEnableForThreadsAt_ConditionCode_InputSamples__App_FUNCT_write_End(Global.stat_CONVERT_LsbByteArray_To_MsbByteArray(Global.stat_CONVERT_LsbInt_To_LsbByteArray(threadId)));
+            JavaLIB_WriteQueForThreadsAt_ClientUserInput.INSTANCE.CLIB_WriteEnableForThreadsAt_ClientUserInput__App_FUNCT_write_End(Global.stat_CONVERT_LsbByteArray_To_MsbByteArray(Global.stat_CONVERT_LsbInt_To_LsbByteArray(threadId)));
         }
         catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError.%n");
@@ -71,7 +70,7 @@ public class WriteQue_ConditionCode {
     public static void app_FUNCT_write_Start(int threadId)
     {
         try {
-            JavaWriteQue_ConditionCode.INSTANCE.CLIB_WriteEnableForThreadsAt_ConditionCode_InputSamples__App_FUNCT_write_Start(Global.stat_CONVERT_LsbByteArray_To_MsbByteArray(Global.stat_CONVERT_LsbInt_To_LsbByteArray(threadId)));
+            JavaLIB_WriteQueForThreadsAt_ClientUserInput.INSTANCE.CLIB_WriteEnableForThreadsAt_ClientUserInput__App_FUNCT_write_Start(Global.stat_CONVERT_LsbByteArray_To_MsbByteArray(Global.stat_CONVERT_LsbInt_To_LsbByteArray(threadId)));
         }
         catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError.%n");

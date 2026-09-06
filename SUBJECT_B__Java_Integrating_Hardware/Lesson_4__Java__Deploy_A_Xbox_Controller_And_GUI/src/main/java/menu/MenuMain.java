@@ -1,8 +1,7 @@
 package menu;
 import engine.Framework;
-import io.WriteQue_Simulation_OutputSamples;
+import io.WriteQue_ClientUserOutput;
 import javax.swing.*;
-import javax.swing.text.DefaultCaret;
 import java.awt.*;
 
 public class MenuMain extends JFrame {
@@ -28,7 +27,7 @@ public class MenuMain extends JFrame {
 
     public void createAndShowGUI_MenuMain(Framework obj)
     {
-        WriteQue_Simulation_OutputSamples.app_FUNCT_write_Start(1);
+        WriteQue_ClientUserOutput.app_FUNCT_write_Start(1);
         this.setTitle("");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         int screenWidth = 1920;
@@ -76,7 +75,7 @@ public class MenuMain extends JFrame {
         this.add(manuMain_panelRight, BorderLayout.EAST);
         this.add(manuMain_panelCentre, BorderLayout.CENTER);
         this.pack();
-        WriteQue_Simulation_OutputSamples.app_FUNCT_write_End(1);
+        WriteQue_ClientUserOutput.app_FUNCT_write_End(1);
     }
 
     public static void printConsoleAndOutput(String message) {
