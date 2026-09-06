@@ -1,4 +1,4 @@
-# MIT teaching package: Master of Engineering - Electronic Systetms - Silicon Life.
+# MIT teaching package: Master of Engineering - Electronic Systems - Silicon Life.
 
 ## Silicon Life Engineer.
 Silicon Life Engineer; Embedded Control Systems, Concurrency; Core, Post-Process., Full Stack Development, Binary Neural Inteligence..
